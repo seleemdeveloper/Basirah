@@ -8,18 +8,22 @@
 
 import UIKit
 
-class DashboardVC: UIViewController {
+class DashboardVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.selectedViewController = self.viewControllers?[1]
 
         // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

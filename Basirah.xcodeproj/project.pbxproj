@@ -21,14 +21,22 @@
 		2B66C36620851B6A0005B38C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66C36420851B6A0005B38C /* LoginVC.xib */; };
 		2B66C370208520060005B38C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66C36F208520060005B38C /* User.swift */; };
 		2B66C372208523770005B38C /* LoginVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66C371208523770005B38C /* LoginVC+Keyboard.swift */; };
+		E2101D962088FE1D00F010FD /* ProfileVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2101D952088FE1D00F010FD /* ProfileVC+MSG.swift */; };
+		E2101D98208901E200F010FD /* ProfileVC+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2101D97208901E200F010FD /* ProfileVC+Realm.swift */; };
+		E2648A3620884E970096FC0E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648A3520884E970096FC0E /* SettingsVC.swift */; };
+		E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648A3920884ED90096FC0E /* RequestsVC.swift */; };
+		E26B886F20894EB000BC5EED /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */; };
+		E26B88722089523600BC5EED /* ProfileVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B88712089523600BC5EED /* ProfileVC+Router.swift */; };
+		E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */; };
+		E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DF52088437A00069AD5 /* DashboardVC.swift */; };
+		E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DFC20884B5900069AD5 /* ProfileVC.swift */; };
+		E29192FC2088F72800EA1FE4 /* ProfileVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29192FB2088F72800EA1FE4 /* ProfileVC+Firebase.swift */; };
 		E29E35B5208823CC00761300 /* LoginVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29E35B4208823CC00761300 /* LoginVC+MSG.swift */; };
 		E29E35B7208823F200761300 /* LoginVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29E35B6208823F200761300 /* LoginVC+Validator.swift */; };
 		E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0A20880DE600216E4E /* RegisterVC+Keyboard.swift */; };
 		E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */; };
 		E2A1AF0F208813DD00216E4E /* RegisterVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */; };
 		E2A1AF122088164400216E4E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF112088164400216E4E /* Defaults.swift */; };
-		E2A1AF192088184300216E4E /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF172088184300216E4E /* DashboardVC.swift */; };
-		E2A1AF1A2088184300216E4E /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A1AF182088184300216E4E /* DashboardVC.xib */; };
 		E2A1AF1C208818FD00216E4E /* RegisterVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF1B208818FD00216E4E /* RegisterVC+Validator.swift */; };
 		E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */; };
 /* End PBXBuildFile section */
@@ -52,14 +60,22 @@
 		2B66C371208523770005B38C /* LoginVC+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Keyboard.swift"; sourceTree = "<group>"; };
 		311D13A13FEB9FE4E42386C0 /* Pods-Basirah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basirah.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Basirah/Pods-Basirah.debug.xcconfig"; sourceTree = "<group>"; };
 		6342BC1E79286BAF2BAE5295 /* Pods-Basirah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basirah.release.xcconfig"; path = "Pods/Target Support Files/Pods-Basirah/Pods-Basirah.release.xcconfig"; sourceTree = "<group>"; };
+		E2101D952088FE1D00F010FD /* ProfileVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+MSG.swift"; sourceTree = "<group>"; };
+		E2101D97208901E200F010FD /* ProfileVC+Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+Realm.swift"; sourceTree = "<group>"; };
+		E2648A3520884E970096FC0E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		E2648A3920884ED90096FC0E /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
+		E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E26B88712089523600BC5EED /* ProfileVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+Router.swift"; sourceTree = "<group>"; };
+		E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoardVC.storyboard; sourceTree = "<group>"; };
+		E2894DF52088437A00069AD5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		E2894DFC20884B5900069AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E29192FB2088F72800EA1FE4 /* ProfileVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+Firebase.swift"; sourceTree = "<group>"; };
 		E29E35B4208823CC00761300 /* LoginVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+MSG.swift"; sourceTree = "<group>"; };
 		E29E35B6208823F200761300 /* LoginVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Validator.swift"; sourceTree = "<group>"; };
 		E2A1AF0A20880DE600216E4E /* RegisterVC+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Keyboard.swift"; sourceTree = "<group>"; };
 		E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Router.swift"; sourceTree = "<group>"; };
 		E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Firebase.swift"; sourceTree = "<group>"; };
 		E2A1AF112088164400216E4E /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		E2A1AF172088184300216E4E /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
-		E2A1AF182088184300216E4E /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
 		E2A1AF1B208818FD00216E4E /* RegisterVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Validator.swift"; sourceTree = "<group>"; };
 		E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+MSG.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +142,9 @@
 		2B66C3522085188C0005B38C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E2894DFB20884B3500069AD5 /* Requests */,
+				E2894DFA20884B2E00069AD5 /* Settings */,
+				E2894DF920884B2600069AD5 /* Profile */,
 				E2A1AF132088181A00216E4E /* Dashboard */,
 				2B66C34E208518680005B38C /* LoginVC */,
 				2B66C34F208518710005B38C /* RegisterVC */,
@@ -213,9 +232,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2648A3220884E4C0096FC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2648A3520884E970096FC0E /* SettingsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2648A3820884EC50096FC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2648A3920884ED90096FC0E /* RequestsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26B887020894EB400BC5EED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2894DF920884B2600069AD5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E2894DFF20884B6600069AD5 /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E2894DFA20884B2E00069AD5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E2648A3220884E4C0096FC0E /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E2894DFB20884B3500069AD5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E2648A3820884EC50096FC0E /* Controller */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E2894DFF20884B6600069AD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2894DFC20884B5900069AD5 /* ProfileVC.swift */,
+				E29192FB2088F72800EA1FE4 /* ProfileVC+Firebase.swift */,
+				E2101D952088FE1D00F010FD /* ProfileVC+MSG.swift */,
+				E2101D97208901E200F010FD /* ProfileVC+Realm.swift */,
+				E26B88712089523600BC5EED /* ProfileVC+Router.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E2A1AF102088163400216E4E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E26B887020894EB400BC5EED /* Extensions */,
 				E2A1AF112088164400216E4E /* Defaults.swift */,
 			);
 			path = Utilities;
@@ -241,6 +321,7 @@
 		E2A1AF152088182600216E4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,8 +329,7 @@
 		E2A1AF162088182C00216E4E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E2A1AF172088184300216E4E /* DashboardVC.swift */,
-				E2A1AF182088184300216E4E /* DashboardVC.xib */,
+				E2894DF52088437A00069AD5 /* DashboardVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,10 +398,10 @@
 			files = (
 				2B66C36620851B6A0005B38C /* LoginVC.xib in Resources */,
 				2B66C347208518620005B38C /* LaunchScreen.storyboard in Resources */,
+				E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */,
 				2B3277052085307100D78A62 /* GoogleService-Info.plist in Resources */,
 				2B2340142085343800444593 /* RegisterVC.xib in Resources */,
 				2B66C344208518620005B38C /* Assets.xcassets in Resources */,
-				E2A1AF1A2088184300216E4E /* DashboardVC.xib in Resources */,
 				2B66C342208518620005B38C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +420,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -348,6 +429,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,11 +478,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2340162085357300444593 /* LoginVC+Firebase.swift in Sources */,
-				E2A1AF192088184300216E4E /* DashboardVC.swift in Sources */,
 				2B66C370208520060005B38C /* User.swift in Sources */,
 				2B2340102085337300444593 /* LoginVC+Router.swift in Sources */,
 				2B66C33D208518620005B38C /* AppDelegate.swift in Sources */,
+				E2101D98208901E200F010FD /* ProfileVC+Realm.swift in Sources */,
 				E29E35B7208823F200761300 /* LoginVC+Validator.swift in Sources */,
+				E29192FC2088F72800EA1FE4 /* ProfileVC+Firebase.swift in Sources */,
+				E26B88722089523600BC5EED /* ProfileVC+Router.swift in Sources */,
+				E26B886F20894EB000BC5EED /* UIViewControllerExtension.swift in Sources */,
 				2B2340132085343800444593 /* RegisterVC.swift in Sources */,
 				2B66C36520851B6A0005B38C /* LoginVC.swift in Sources */,
 				E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */,
@@ -409,8 +494,13 @@
 				E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */,
 				E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */,
 				E2A1AF122088164400216E4E /* Defaults.swift in Sources */,
+				E2101D962088FE1D00F010FD /* ProfileVC+MSG.swift in Sources */,
+				E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */,
+				E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */,
+				E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */,
 				E2A1AF1C208818FD00216E4E /* RegisterVC+Validator.swift in Sources */,
 				E29E35B5208823CC00761300 /* LoginVC+MSG.swift in Sources */,
+				E2648A3620884E970096FC0E /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

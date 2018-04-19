@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 extension RegisterVC
 {
     enum RegisterRouterDestinations
@@ -20,8 +21,8 @@ extension RegisterVC
         switch destination
         {
             case .dashboard:
-                let dashboardVC = DashboardVC(nibName: "DashboardVC", bundle: nil)
-                 self.present(dashboardVC, animated: true, completion: nil)
+                    guard let dashboardVC = UIStoryboard(name: "DashBoardVC", bundle: nil).instantiateViewController(withIdentifier: "DashBoardVC") as? DashboardVC else {return}
+                    self.present(dashboardVC, animated: true, completion: nil)
         }
     }
     

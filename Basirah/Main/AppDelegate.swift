@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        setDefaultUser()
         navigateToFirstScreen()
         
         return true
@@ -29,39 +28,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func navigateToFirstScreen()
     {
-        try! Auth.auth().signOut()
-        let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
-        self.navigationController = UINavigationController(rootViewController:loginVC)
+       // try! Auth.auth().signOut()
+        
+        if let loggedUserEmail = Defaults.getValue(of: DefaultsKeys.loggedUser.rawValue) as? String,loggedUserEmail != ""
+        {
+            guard let dashboardVC = UIStoryboard(name: "DashBoardVC", bundle: nil).instantiateViewController(withIdentifier: "DashBoardVC") as? DashboardVC else {return}
+            self.navigationController = UINavigationController(rootViewController:dashboardVC)
+        }
+        else
+        {
+            let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
+            self.navigationController = UINavigationController(rootViewController:loginVC)
+        }
+        
         self.window!.rootViewController = self.navigationController
         self.window!.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
     }
     
     
-    func setDefaultUser()
-    {
-        
-//        let user = User()
-//        user.name = "Ahmed Seleem"
-//        user.email = "ahmed@nagwa.com"
-//        user.userType = .requester
-//        user.password = "1111"
-//
-        
-        
-         guard let realm = AppDelegate.realm else { return }
-        
-//        try! realm.write {
-//            realm.add(user)
-//        }
- 
-      
-        
-        let result:Results<User> = realm.objects(User.self)
-        print(result.first)
-        
-    }
-    
+
     class var realm: Realm?
     {
        return try? Realm(configuration: .defaultConfiguration)

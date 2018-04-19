@@ -34,6 +34,11 @@ func isRegisteredEmail(email: String) -> Bool
     return realm.objects(User.self).filter("email == %@",email).first != nil
 }
 
+func currentUser() -> User?
+{
+    guard let realm = AppDelegate.realm else { return nil }
+    return realm.objects(User.self).filter("email == %@",Defaults.getValue(of: DefaultsKeys.loggedUser.rawValue) ?? "").first
+}
 
 /*
 
