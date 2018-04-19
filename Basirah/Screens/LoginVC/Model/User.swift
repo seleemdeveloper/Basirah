@@ -26,6 +26,15 @@ enum UserType:Int
     case requester 
     case voulunteer
 }
+
+
+func isRegisteredEmail(email: String) -> Bool
+{
+    guard let realm = AppDelegate.realm else { return false }
+    return realm.objects(User.self).filter("email == %@",email).first != nil
+}
+
+
 /*
 
 class Request: Object

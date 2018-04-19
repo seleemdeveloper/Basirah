@@ -21,6 +21,8 @@
 		2B66C36620851B6A0005B38C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B66C36420851B6A0005B38C /* LoginVC.xib */; };
 		2B66C370208520060005B38C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66C36F208520060005B38C /* User.swift */; };
 		2B66C372208523770005B38C /* LoginVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66C371208523770005B38C /* LoginVC+Keyboard.swift */; };
+		E29E35B5208823CC00761300 /* LoginVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29E35B4208823CC00761300 /* LoginVC+MSG.swift */; };
+		E29E35B7208823F200761300 /* LoginVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29E35B6208823F200761300 /* LoginVC+Validator.swift */; };
 		E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0A20880DE600216E4E /* RegisterVC+Keyboard.swift */; };
 		E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */; };
 		E2A1AF0F208813DD00216E4E /* RegisterVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */; };
@@ -28,6 +30,7 @@
 		E2A1AF192088184300216E4E /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF172088184300216E4E /* DashboardVC.swift */; };
 		E2A1AF1A2088184300216E4E /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2A1AF182088184300216E4E /* DashboardVC.xib */; };
 		E2A1AF1C208818FD00216E4E /* RegisterVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF1B208818FD00216E4E /* RegisterVC+Validator.swift */; };
+		E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,8 @@
 		2B66C371208523770005B38C /* LoginVC+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Keyboard.swift"; sourceTree = "<group>"; };
 		311D13A13FEB9FE4E42386C0 /* Pods-Basirah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basirah.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Basirah/Pods-Basirah.debug.xcconfig"; sourceTree = "<group>"; };
 		6342BC1E79286BAF2BAE5295 /* Pods-Basirah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basirah.release.xcconfig"; path = "Pods/Target Support Files/Pods-Basirah/Pods-Basirah.release.xcconfig"; sourceTree = "<group>"; };
+		E29E35B4208823CC00761300 /* LoginVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+MSG.swift"; sourceTree = "<group>"; };
+		E29E35B6208823F200761300 /* LoginVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+Validator.swift"; sourceTree = "<group>"; };
 		E2A1AF0A20880DE600216E4E /* RegisterVC+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Keyboard.swift"; sourceTree = "<group>"; };
 		E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Router.swift"; sourceTree = "<group>"; };
 		E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Firebase.swift"; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		E2A1AF172088184300216E4E /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		E2A1AF182088184300216E4E /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
 		E2A1AF1B208818FD00216E4E /* RegisterVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+Validator.swift"; sourceTree = "<group>"; };
+		E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+MSG.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,8 @@
 				2B66C371208523770005B38C /* LoginVC+Keyboard.swift */,
 				2B23400F2085337300444593 /* LoginVC+Router.swift */,
 				2B2340152085357300444593 /* LoginVC+Firebase.swift */,
+				E29E35B4208823CC00761300 /* LoginVC+MSG.swift */,
+				E29E35B6208823F200761300 /* LoginVC+Validator.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 				E2A1AF0A20880DE600216E4E /* RegisterVC+Keyboard.swift */,
 				E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */,
 				E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */,
+				E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -391,14 +400,17 @@
 				2B66C370208520060005B38C /* User.swift in Sources */,
 				2B2340102085337300444593 /* LoginVC+Router.swift in Sources */,
 				2B66C33D208518620005B38C /* AppDelegate.swift in Sources */,
+				E29E35B7208823F200761300 /* LoginVC+Validator.swift in Sources */,
 				2B2340132085343800444593 /* RegisterVC.swift in Sources */,
 				2B66C36520851B6A0005B38C /* LoginVC.swift in Sources */,
 				E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */,
 				2B66C372208523770005B38C /* LoginVC+Keyboard.swift in Sources */,
 				E2A1AF0F208813DD00216E4E /* RegisterVC+Firebase.swift in Sources */,
 				E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */,
+				E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */,
 				E2A1AF122088164400216E4E /* Defaults.swift in Sources */,
 				E2A1AF1C208818FD00216E4E /* RegisterVC+Validator.swift in Sources */,
+				E29E35B5208823CC00761300 /* LoginVC+MSG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

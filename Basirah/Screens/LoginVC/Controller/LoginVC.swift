@@ -15,6 +15,9 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var msgIndicatorLabel: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,8 +33,31 @@ class LoginVC: UIViewController {
     
     @IBAction func loginButtonDidTouched(_ sender: UIButton)
     {
-        route(to: .dashboard)
+        guard let email = emailTextField.text,let password = passwordTextField.text else {
+            return
+        }
+        validateInputs(email: email, password: password)
+        {
+            (isValid, msg) in
+            
+            if isValid
+            {
+                login(email: email, password: password, successHandler:
+                    {
+                        self.route(to: .dashboard)
+                }, failureHandler:
+                    {
+                        msg in
+                        self.showMSG(with: msg)
+                })
+            }
+            else
+            {
+                showMSG(with: msg)
+            }
+        }
     }
+    
     
     @IBAction func forgetPasswordButtonDidTouched(_ sender: UIButton)
     {

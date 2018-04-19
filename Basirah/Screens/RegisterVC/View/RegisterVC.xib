@@ -21,6 +21,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="Basirah" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextFiled" destination="Mhl-Ec-w5O" id="FgW-vz-NYN"/>
+                <outlet property="msgIndicatorLabel" destination="xO2-ea-rH0" id="RnD-Bv-INo"/>
                 <outlet property="passwordTextField" destination="wc1-ol-IBJ" id="9Xj-6j-AvE"/>
                 <outlet property="repeatPasswordTextField" destination="4FR-Uk-3BE" id="Jyk-89-N0D"/>
                 <outlet property="scrollView" destination="Xtz-a5-JQn" id="bXJ-vV-Dje"/>
@@ -41,7 +42,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="41" id="HwO-yH-HBT"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="19"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -134,14 +135,24 @@
                                                 <constraint firstAttribute="trailing" secondItem="3vR-bK-KIA" secondAttribute="trailing" constant="30" id="xhF-Te-l0B"/>
                                             </constraints>
                                         </view>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البيانات خاطئة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO2-ea-rH0">
+                                            <rect key="frame" x="32" y="378.5" width="311" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="JQl-r8-MZI" firstAttribute="top" secondItem="fl6-8y-F4S" secondAttribute="bottom" constant="67" id="12x-Yw-Zc5"/>
                                         <constraint firstItem="JQl-r8-MZI" firstAttribute="leading" secondItem="oOG-y5-MIO" secondAttribute="leading" id="1MY-eI-PvE"/>
+                                        <constraint firstAttribute="trailing" secondItem="xO2-ea-rH0" secondAttribute="trailing" constant="32" id="Ncq-ex-IWZ"/>
                                         <constraint firstItem="fl6-8y-F4S" firstAttribute="centerX" secondItem="oOG-y5-MIO" secondAttribute="centerX" id="VzV-Rg-D8N"/>
                                         <constraint firstAttribute="trailing" secondItem="JQl-r8-MZI" secondAttribute="trailing" id="aRm-pe-gBy"/>
                                         <constraint firstItem="fl6-8y-F4S" firstAttribute="top" secondItem="oOG-y5-MIO" secondAttribute="top" constant="63.5" id="fAT-NU-jMu"/>
+                                        <constraint firstItem="xO2-ea-rH0" firstAttribute="leading" secondItem="oOG-y5-MIO" secondAttribute="leading" constant="32" id="gUC-ue-KAc"/>
+                                        <constraint firstItem="xO2-ea-rH0" firstAttribute="centerX" secondItem="oOG-y5-MIO" secondAttribute="centerX" id="lRy-wK-hcg"/>
+                                        <constraint firstItem="xO2-ea-rH0" firstAttribute="top" secondItem="JQl-r8-MZI" secondAttribute="bottom" constant="16" id="m67-xX-gJY"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -167,6 +178,9 @@
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <connections>
+                                <action selector="signupButtonDidTouched:" destination="-1" eventType="touchUpInside" id="P1I-e3-WNJ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

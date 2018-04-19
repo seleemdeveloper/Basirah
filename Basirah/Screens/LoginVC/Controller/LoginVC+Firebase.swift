@@ -13,7 +13,7 @@ import RealmSwift
 extension LoginVC
 {
     
-    func login(email: String,password: String,successHandler: (_ user: User)->(),failureHandler: @escaping ()->())
+    func login(email: String,password: String,successHandler: @escaping ()->(),failureHandler: @escaping (_ msg: String)->())
     {
         
         Auth.auth().signIn(withEmail: email, password: password)
@@ -22,16 +22,44 @@ extension LoginVC
             
             guard let user = user, error == nil else
             {
-                failureHandler()
+                failureHandler("تعذر تسجيل الدخول تأكد من البريد الالكتروني وكلمة المرور ثم حاول مرة اخري")
                 return
             }
             
+            guard let realm = AppDelegate.realm else
+            {
+                failureHandler("تعذر تسجيل الدخول")
+                return
+            }
             
-           
+            let realmUser = User()
+            realmUser.email = email
+            realmUser.userType = .requester
+            realmUser.password = password
+            
+            do
+            {
+                if !isRegisteredEmail(email: email)
+                {
+                    try realm.write
+                    {
+                        realm.add(realmUser)
+                    }
+                }
+                Defaults.set(key: DefaultsKeys.loggedUser.rawValue, for: realmUser.email)
+                successHandler()
+            }
+            catch
+            {
+                failureHandler("تعذر تسجيل الدخول")
+            }
             
         }
         
     }
+            
+            
+    
     
     
 }

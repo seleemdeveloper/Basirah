@@ -1,5 +1,5 @@
 //
-//  RegisterVC+Validator.swift
+//  LoginVC+Validator.swift
 //  Basirah
 //
 //  Created by Ahmed Seleem on 4/19/18.
@@ -7,13 +7,13 @@
 //
 
 import Foundation
-extension RegisterVC
+extension LoginVC
 {
     
-    func validateInputs(email:String,password:String,repeatedPassword:String,completion:(_ valid: Bool,_ msg: String)->())
+    func validateInputs(email:String,password:String,completion:(_ valid: Bool,_ msg: String)->())
     {
         
-        guard !email.isEmpty,!password.isEmpty,!repeatedPassword.isEmpty else
+        guard !email.isEmpty,!password.isEmpty else
         {
             completion(false, "املأ الخانات الفارغة")
             return
@@ -25,11 +25,7 @@ extension RegisterVC
             return
         }
         
-        guard passwordMatcing(password1: password, password2: repeatedPassword) else
-        {
-            completion(false, "تأكد من أن كلمتي المرور متطابقتين")
-            return
-        }
+       
         
         completion(true, "")
     }
@@ -42,9 +38,5 @@ extension RegisterVC
         return emailTest.evaluate(with: email)
     }
     
-    func passwordMatcing(password1:String,password2:String)->Bool
-    {
-        return password1 == password2
-    }
     
 }

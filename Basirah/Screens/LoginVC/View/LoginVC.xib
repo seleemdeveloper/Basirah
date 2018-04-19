@@ -24,6 +24,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Basirah" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="nQx-E5-282" id="gvC-jJ-2Ec"/>
+                <outlet property="msgIndicatorLabel" destination="8Kv-vn-RWT" id="GfA-jB-lkk"/>
                 <outlet property="passwordTextField" destination="j1n-EX-TU8" id="kKg-rI-afN"/>
                 <outlet property="scrollView" destination="fUg-In-PlP" id="t2Z-Qm-u7Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -43,7 +44,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="41" id="ZUH-q0-wJv"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="19"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -113,7 +114,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwK-3c-Xvb" userLabel="forget and sign up container">
-                                    <rect key="frame" x="78.5" y="376" width="219" height="70"/>
+                                    <rect key="frame" x="78.5" y="409" width="219" height="70"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-FM-QNO">
                                             <rect key="frame" x="7.5" y="0.0" width="210" height="28"/>
@@ -164,6 +165,12 @@
                                         <constraint firstAttribute="height" constant="100" id="d8G-4w-Bdu"/>
                                     </constraints>
                                 </imageView>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البيانات خاطئة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kv-vn-RWT">
+                                    <rect key="frame" x="32" y="355" width="311" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <gestureRecognizers/>
                             <constraints>
@@ -171,8 +178,11 @@
                                 <constraint firstItem="k59-2c-Oaw" firstAttribute="centerX" secondItem="fUg-In-PlP" secondAttribute="centerX" id="3Qg-dS-O6h"/>
                                 <constraint firstItem="dA9-aQ-TxH" firstAttribute="leading" secondItem="fUg-In-PlP" secondAttribute="leading" id="4ly-ur-Zkg"/>
                                 <constraint firstAttribute="bottom" secondItem="fwK-3c-Xvb" secondAttribute="bottom" constant="51" id="9CL-lb-4tu"/>
+                                <constraint firstItem="8Kv-vn-RWT" firstAttribute="leading" secondItem="fUg-In-PlP" secondAttribute="leading" constant="32" id="FPl-QJ-aYf"/>
                                 <constraint firstItem="fwK-3c-Xvb" firstAttribute="centerX" secondItem="fUg-In-PlP" secondAttribute="centerX" id="MUe-tk-IFc"/>
-                                <constraint firstItem="fwK-3c-Xvb" firstAttribute="top" secondItem="dA9-aQ-TxH" secondAttribute="bottom" constant="37.5" id="W4Q-0c-28s"/>
+                                <constraint firstItem="8Kv-vn-RWT" firstAttribute="top" secondItem="dA9-aQ-TxH" secondAttribute="bottom" constant="16" id="MXM-y3-LHJ"/>
+                                <constraint firstItem="fwK-3c-Xvb" firstAttribute="top" secondItem="dA9-aQ-TxH" secondAttribute="bottom" constant="70" id="W4Q-0c-28s"/>
+                                <constraint firstAttribute="trailing" secondItem="8Kv-vn-RWT" secondAttribute="trailing" constant="32" id="ZAr-p2-Fcp"/>
                                 <constraint firstItem="k59-2c-Oaw" firstAttribute="top" secondItem="fUg-In-PlP" secondAttribute="top" constant="63.5" id="bPH-sR-p8u"/>
                                 <constraint firstItem="dA9-aQ-TxH" firstAttribute="centerX" secondItem="fUg-In-PlP" secondAttribute="centerX" id="d0v-gn-rYH"/>
                                 <constraint firstItem="dA9-aQ-TxH" firstAttribute="top" secondItem="k59-2c-Oaw" secondAttribute="bottom" constant="67" id="dX9-6E-CjE"/>

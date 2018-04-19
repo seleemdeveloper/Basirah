@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func navigateToFirstScreen()
     {
+        try! Auth.auth().signOut()
         let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
         self.navigationController = UINavigationController(rootViewController:loginVC)
         self.window!.rootViewController = self.navigationController

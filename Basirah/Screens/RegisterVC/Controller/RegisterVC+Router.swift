@@ -21,8 +21,7 @@ extension RegisterVC
         {
             case .dashboard:
                 let dashboardVC = DashboardVC(nibName: "DashboardVC", bundle: nil)
-                self.navigationController?.pushViewController(dashboardVC, animated: true)
-            
+                 self.present(dashboardVC, animated: true, completion: nil)
         }
     }
     
