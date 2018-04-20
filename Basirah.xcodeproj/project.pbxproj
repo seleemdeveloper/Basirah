@@ -23,6 +23,8 @@
 		2B66C372208523770005B38C /* LoginVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66C371208523770005B38C /* LoginVC+Keyboard.swift */; };
 		E2101D962088FE1D00F010FD /* ProfileVC+MSG.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2101D952088FE1D00F010FD /* ProfileVC+MSG.swift */; };
 		E2101D98208901E200F010FD /* ProfileVC+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2101D97208901E200F010FD /* ProfileVC+Realm.swift */; };
+		E21C52DD2089912F00F74FFE /* RecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21C52DB2089912F00F74FFE /* RecorderVC.swift */; };
+		E21C52DE2089912F00F74FFE /* RecorderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21C52DC2089912F00F74FFE /* RecorderVC.xib */; };
 		E2648A3620884E970096FC0E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648A3520884E970096FC0E /* SettingsVC.swift */; };
 		E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648A3920884ED90096FC0E /* RequestsVC.swift */; };
 		E26B886F20894EB000BC5EED /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */; };
@@ -38,6 +40,8 @@
 		E26B888C208975F100BC5EED /* NewRequestVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888B208975F100BC5EED /* NewRequestVC+Firebase.swift */; };
 		E26B888E208977D300BC5EED /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888D208977D300BC5EED /* Request.swift */; };
 		E26B889020897C9C00BC5EED /* NewRequestVC+DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888F20897C9C00BC5EED /* NewRequestVC+DatePickerView.swift */; };
+		E26B889220897E4A00BC5EED /* RequestsVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B889120897E4A00BC5EED /* RequestsVC+Firebase.swift */; };
+		E26B889420897E5B00BC5EED /* RequestsVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B889320897E5B00BC5EED /* RequestsVC+TableView.swift */; };
 		E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */; };
 		E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DF52088437A00069AD5 /* DashboardVC.swift */; };
 		E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DFC20884B5900069AD5 /* ProfileVC.swift */; };
@@ -73,6 +77,8 @@
 		6342BC1E79286BAF2BAE5295 /* Pods-Basirah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basirah.release.xcconfig"; path = "Pods/Target Support Files/Pods-Basirah/Pods-Basirah.release.xcconfig"; sourceTree = "<group>"; };
 		E2101D952088FE1D00F010FD /* ProfileVC+MSG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+MSG.swift"; sourceTree = "<group>"; };
 		E2101D97208901E200F010FD /* ProfileVC+Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+Realm.swift"; sourceTree = "<group>"; };
+		E21C52DB2089912F00F74FFE /* RecorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderVC.swift; sourceTree = "<group>"; };
+		E21C52DC2089912F00F74FFE /* RecorderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecorderVC.xib; sourceTree = "<group>"; };
 		E2648A3520884E970096FC0E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		E2648A3920884ED90096FC0E /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
 		E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 		E26B888B208975F100BC5EED /* NewRequestVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+Firebase.swift"; sourceTree = "<group>"; };
 		E26B888D208977D300BC5EED /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		E26B888F20897C9C00BC5EED /* NewRequestVC+DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+DatePickerView.swift"; sourceTree = "<group>"; };
+		E26B889120897E4A00BC5EED /* RequestsVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestsVC+Firebase.swift"; sourceTree = "<group>"; };
+		E26B889320897E5B00BC5EED /* RequestsVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestsVC+TableView.swift"; sourceTree = "<group>"; };
 		E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoardVC.storyboard; sourceTree = "<group>"; };
 		E2894DF52088437A00069AD5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		E2894DFC20884B5900069AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -164,6 +172,7 @@
 		2B66C3522085188C0005B38C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E21C52D82089910700F74FFE /* RecorderVC */,
 				E26B88792089618900BC5EED /* NewRequestVC */,
 				E2894DFB20884B3500069AD5 /* Requests */,
 				E2894DFA20884B2E00069AD5 /* Settings */,
@@ -255,6 +264,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E21C52D82089910700F74FFE /* RecorderVC */ = {
+			isa = PBXGroup;
+			children = (
+				E21C52DA2089911900F74FFE /* Controller */,
+				E21C52D92089911100F74FFE /* View */,
+			);
+			path = RecorderVC;
+			sourceTree = "<group>";
+		};
+		E21C52D92089911100F74FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E21C52DC2089912F00F74FFE /* RecorderVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E21C52DA2089911900F74FFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E21C52DB2089912F00F74FFE /* RecorderVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E2648A3220884E4C0096FC0E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +302,8 @@
 			children = (
 				E2648A3920884ED90096FC0E /* RequestsVC.swift */,
 				E26B88812089668D00BC5EED /* RequestsVC+Router.swift */,
+				E26B889120897E4A00BC5EED /* RequestsVC+Firebase.swift */,
+				E26B889320897E5B00BC5EED /* RequestsVC+TableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -477,6 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21C52DE2089912F00F74FFE /* RecorderVC.xib in Resources */,
 				2B66C36620851B6A0005B38C /* LoginVC.xib in Resources */,
 				2B66C347208518620005B38C /* LaunchScreen.storyboard in Resources */,
 				E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */,
@@ -500,6 +537,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Basirah/Pods-Basirah-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -509,6 +547,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -575,6 +614,7 @@
 				2B2340132085343800444593 /* RegisterVC.swift in Sources */,
 				E26B889020897C9C00BC5EED /* NewRequestVC+DatePickerView.swift in Sources */,
 				2B66C36520851B6A0005B38C /* LoginVC.swift in Sources */,
+				E26B889220897E4A00BC5EED /* RequestsVC+Firebase.swift in Sources */,
 				E26B888C208975F100BC5EED /* NewRequestVC+Firebase.swift in Sources */,
 				E26B888A2089743600BC5EED /* NewRequestVC+Validator.swift in Sources */,
 				E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */,
@@ -583,10 +623,12 @@
 				E26B8884208969D000BC5EED /* NewRequestVC+Keyboard.swift in Sources */,
 				E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */,
 				E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */,
+				E26B889420897E5B00BC5EED /* RequestsVC+TableView.swift in Sources */,
 				E2A1AF122088164400216E4E /* Defaults.swift in Sources */,
 				E26B887820895F3E00BC5EED /* ResponseCell.swift in Sources */,
 				E2101D962088FE1D00F010FD /* ProfileVC+MSG.swift in Sources */,
 				E26B887F208961C700BC5EED /* NewRequestVC.swift in Sources */,
+				E21C52DD2089912F00F74FFE /* RecorderVC.swift in Sources */,
 				E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */,
 				E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */,
 				E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */,

@@ -27,10 +27,10 @@ extension NewRequestVC
             RequestKeys.bookName : bookName,
             RequestKeys.bookAuthor : bookAuthor,
             RequestKeys.bookCategory : category,
-            RequestKeys.date: Date().description,
             RequestKeys.dueDate : dueDate
         ]
-        self.ref.child(RequestKeys.mainKey).child(userID).setValue(requestBody)
+        
+    self.ref.child(RequestKeys.mainKey).child(userID).child(Int(Date().timeIntervalSince1970).description).setValue(requestBody)
         
         
         successHandler()

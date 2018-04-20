@@ -7,17 +7,41 @@
 //
 
 import UIKit
+import Firebase
 
 class RequestsVC: UIViewController {
 
     
+
+    var ref: DatabaseReference!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var requests: [Request] = []
+    {
+        didSet
+        {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.getCurrentUserRequests({ (requests) in
+            self.requests = requests
+        }) { (msg) in
+            self.showDefaultAlert(title: "خطأ في تحميل الطلبات", message: msg)
+        }
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

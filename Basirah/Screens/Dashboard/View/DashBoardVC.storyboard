@@ -46,42 +46,49 @@
                                 <rect key="frame" x="0.0" y="100" width="375" height="851"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="249" id="WDw-jn-mb1" customClass="RequestCell" customModule="Basirah" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="249" id="WDw-jn-mb1" customClass="RequestCell" customModule="Basirah" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="249"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WDw-jn-mb1" id="mQ1-ir-cbd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="248.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wS-xP-f2i" userLabel="seperator">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="buq-G2-7r2"/>
+                                                    </constraints>
+                                                </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O4H-Qy-awG">
-                                                    <rect key="frame" x="247" y="0.0" width="120" height="248.5"/>
+                                                    <rect key="frame" x="247" y="20" width="120" height="228.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الكتاب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI9-G7-Y6B">
-                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المؤلف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nS-hi-ICS">
-                                                            <rect key="frame" x="0.0" y="49.5" width="120" height="50"/>
+                                                            <rect key="frame" x="0.0" y="45.5" width="120" height="46"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التصنيف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9H-Ns-b2G">
-                                                            <rect key="frame" x="0.0" y="99.5" width="120" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="91.5" width="120" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلب بتاريخ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfX-I6-eqb">
-                                                            <rect key="frame" x="0.0" y="149" width="120" height="50"/>
+                                                            <rect key="frame" x="0.0" y="137" width="120" height="46"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التاريخ النهائي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boc-so-z7D">
-                                                            <rect key="frame" x="0.0" y="199" width="120" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="183" width="120" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -92,34 +99,34 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F1w-xz-4Qn">
-                                                    <rect key="frame" x="8" y="0.0" width="239" height="248.5"/>
+                                                    <rect key="frame" x="8" y="20" width="239" height="228.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الرجال من المريخ والنساء من الزهرة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctF-TD-eFH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="239" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="239" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أحمد فتحي عبد العزيز سليم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-IF-Rl0">
-                                                            <rect key="frame" x="0.0" y="49.5" width="239" height="50"/>
+                                                            <rect key="frame" x="0.0" y="45.5" width="239" height="46"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="روايات عالمية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvA-Di-UrB">
-                                                            <rect key="frame" x="0.0" y="99.5" width="239" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="91.5" width="239" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الثلاثاء ٢١ جمادي الثاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-fL-vbI">
-                                                            <rect key="frame" x="0.0" y="149" width="239" height="50"/>
+                                                            <rect key="frame" x="0.0" y="137" width="239" height="46"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاربعاء ٢٢ جمادي الثاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhW-zN-lLF">
-                                                            <rect key="frame" x="0.0" y="199" width="239" height="49.5"/>
+                                                            <rect key="frame" x="0.0" y="183" width="239" height="45.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -129,12 +136,15 @@
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
+                                                <constraint firstItem="5wS-xP-f2i" firstAttribute="top" secondItem="mQ1-ir-cbd" secondAttribute="top" id="2Vb-OD-L2n"/>
                                                 <constraint firstItem="O4H-Qy-awG" firstAttribute="leading" secondItem="F1w-xz-4Qn" secondAttribute="trailing" id="8Vf-zj-ePz"/>
+                                                <constraint firstItem="5wS-xP-f2i" firstAttribute="leading" secondItem="mQ1-ir-cbd" secondAttribute="leading" id="BQN-3K-e9R"/>
                                                 <constraint firstAttribute="bottom" secondItem="O4H-Qy-awG" secondAttribute="bottom" id="FVd-ew-NLy"/>
-                                                <constraint firstItem="O4H-Qy-awG" firstAttribute="top" secondItem="mQ1-ir-cbd" secondAttribute="top" id="SpL-uM-iMy"/>
-                                                <constraint firstItem="F1w-xz-4Qn" firstAttribute="top" secondItem="mQ1-ir-cbd" secondAttribute="top" id="UwT-bF-F5T"/>
+                                                <constraint firstItem="O4H-Qy-awG" firstAttribute="top" secondItem="5wS-xP-f2i" secondAttribute="bottom" id="OZZ-Ru-6ZM"/>
+                                                <constraint firstAttribute="trailing" secondItem="5wS-xP-f2i" secondAttribute="trailing" id="ewZ-bw-YAC"/>
                                                 <constraint firstAttribute="trailing" secondItem="O4H-Qy-awG" secondAttribute="trailing" constant="8" id="jWL-H2-aYm"/>
                                                 <constraint firstAttribute="bottom" secondItem="F1w-xz-4Qn" secondAttribute="bottom" id="poZ-Hw-ofX"/>
+                                                <constraint firstItem="F1w-xz-4Qn" firstAttribute="top" secondItem="5wS-xP-f2i" secondAttribute="bottom" id="tHp-C1-zLF"/>
                                                 <constraint firstItem="F1w-xz-4Qn" firstAttribute="leading" secondItem="mQ1-ir-cbd" secondAttribute="leading" constant="8" id="w0Q-5u-m3M"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -146,7 +156,7 @@
                                             <outlet property="startDateLabel" destination="J3D-fL-vbI" id="m5k-Dx-lAi"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResponseCell" rowHeight="321" id="WnY-w5-Nqz" customClass="ResponseCell" customModule="Basirah" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ResponseCell" rowHeight="321" id="WnY-w5-Nqz" customClass="ResponseCell" customModule="Basirah" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="277" width="375" height="321"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WnY-w5-Nqz" id="hrm-n6-QeK">
@@ -313,6 +323,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="طلباتي" image="request-icon" id="Bxy-3n-BId"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="tableView" destination="mhS-8C-T96" id="fd2-iv-Pdd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qN8-vI-jr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

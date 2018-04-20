@@ -8,8 +8,7 @@ pod 'RealmSwift'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
-
-
+pod 'ObjectMapper'
   # Pods for Basirah
 
 end
