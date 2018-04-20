@@ -43,6 +43,7 @@ extension RequestsVC
                 return
             }
             request.bookDate = date.description
+            request.requestOwner = userID
             requests.append(request)
         }
         successHandler(requests)

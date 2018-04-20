@@ -52,15 +52,15 @@
                         <constraint firstAttribute="height" constant="70" id="f4C-CV-F1x"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Finish Recording">
+                    <state key="normal" title="انهاء التسجيل ورفع الفيديو">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
                         <action selector="finishRecordingButtonDidTOuched:" destination="-1" eventType="touchUpInside" id="ObZ-2B-NMg"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uploading 24 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7in-hh-pIY">
-                    <rect key="frame" x="128.5" y="392.5" width="118" height="21"/>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري رفع المقطع الصوتي ٢٠ ٪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7in-hh-pIY">
+                    <rect key="frame" x="84.5" y="392.5" width="206" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                         <constraint firstAttribute="height" constant="70" id="iYv-Vi-xvP"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="Reset">
+                    <state key="normal" title="مسح التسجيل">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -80,8 +80,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIh-Fo-W9V">
-                    <rect key="frame" x="16" y="20" width="52" height="30"/>
-                    <state key="normal" title="dismiss"/>
+                    <rect key="frame" x="16" y="20" width="30" height="30"/>
+                    <state key="normal" title="الغاء"/>
                     <connections>
                         <action selector="dismissButtonDidTouched:" destination="-1" eventType="touchUpInside" id="o0v-lo-V4W"/>
                     </connections>
@@ -93,12 +93,11 @@
                         <constraint firstAttribute="height" constant="70" id="NFC-rn-auG"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                    <state key="normal" title="play">
+                    <state key="normal" title="تشغيل">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
                         <action selector="playButtonDidTouched:" destination="-1" eventType="touchUpInside" id="3JB-0U-pgQ"/>
-                        <action selector="resetButtonDidTouched:" destination="-1" eventType="touchUpInside" id="XZa-iW-8x1"/>
                     </connections>
                 </button>
             </subviews>

@@ -41,93 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Basirah/Screens/Requests/Controller/RequestsVC+TableView.swift"
-            timestampString = "545889816.3015749"
+            filePath = "Basirah/Screens/RecorderVC/Controller/RecorderVC.swift"
+            timestampString = "545925660.208295"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Basirah/Screens/Requests/Controller/RequestsVC+TableView.swift"
-            timestampString = "545889816.301643"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Basirah/Screens/Requests/Controller/RequestsVC.swift"
-            timestampString = "545889816.301702"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Basirah.RequestsVC.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Basirah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmed/Downloads/Basirah-master/Basirah/Screens/Requests/Controller/RequestsVC.swift"
-                  timestampString = "545885795.745096"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Basirah.Request&gt;) -&gt; () in Basirah.RequestsVC.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Basirah"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmed/Downloads/Basirah-master/Basirah/Screens/Requests/Controller/RequestsVC.swift"
-                  timestampString = "545885795.747375"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Basirah/Screens/Requests/Controller/RequestsVC+Firebase.swift"
-            timestampString = "545889816.30176"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getCurrentUserRequests(_:_:)"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "finishRecordingButtonDidTOuched(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

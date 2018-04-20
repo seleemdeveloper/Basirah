@@ -9,6 +9,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'ObjectMapper'
+pod 'Firebase/Storage'
   # Pods for Basirah
 
 end

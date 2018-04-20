@@ -21,6 +21,11 @@ class RecorderVC: UIViewController {
     @IBOutlet weak var resetButton: UIButton!
     
     var recorder: AVAudioRecorder!
+    //1. create the session
+    var session: AVAudioSession!
+    
+    var request: Request!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +34,7 @@ class RecorderVC: UIViewController {
         disableClearButton()
         disableFinishButton()
         
-        do
-        {
-          try prepareRecorder()
-        }
-        catch
-        {
-            self.dismiss(animated: true, completion: nil)
-        }
+        prepareRecorder()
         
     }
 
@@ -47,6 +45,8 @@ class RecorderVC: UIViewController {
     
     @IBAction func recordPauseButtonDidTouched(_ sender: UIButton)
     {
+        self.uploadingIndicatorLabel.isHidden = true
+
         guard let recorder = recorder else {return}
         if recorder.isRecording
         {
@@ -67,62 +67,83 @@ class RecorderVC: UIViewController {
     @IBAction func playButtonDidTouched(_ sender: UIButton)
     {
         recorder.stop()
-        
-        //todo: call player
+        route(to: .player)
     }
     
     @IBAction func finishRecordingButtonDidTOuched(_ sender: UIButton)
     {
         recorder.stop()
+        recorderImgView.image = #imageLiteral(resourceName: "recorder-icon")
         disableClearButton()
         disablePlayButton()
+        
+        uploadAudioFile(with: request, fileURL: recorder.url,
+        {
+            self.dismiss(animated: true, completion: nil)
+            
+        }, { (msg) in
+            
+            self.showDefaultAlert(title: "خطأ", message: msg)
+            
+        }) { (progess) in
+            self.uploadingIndicatorLabel.isHidden = false
+            self.uploadingIndicatorLabel.text = "جاري رفع الملف الصوتي \(progess)"
+        }
     }
     
     @IBAction func resetButtonDidTouched(_ sender: UIButton)
     {
         recorder.stop()
-        recorder = nil
-        do
-        {
-            try prepareRecorder()
-        }
-        catch
-        {
-            self.dismiss(animated: true, completion: nil)
-        }
         
+        self.uploadingIndicatorLabel.isHidden = true
         disableFinishButton()
         disableClearButton()
         disablePlayButton()
     }
     
     
-    func getDocumentsDirectory() -> URL {
+    func audioURL() -> URL
+    {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
+        var documentsDirectory = paths[0]
+        documentsDirectory.appendPathComponent("audio.m4a")
         return documentsDirectory
     }
     
     
-    func prepareRecorder() throws
+    func prepareRecorder()
     {
-        do {
-            
-            var audioURL = getDocumentsDirectory()
-            audioURL.appendPathComponent("/audio.m4a")
-            
-            let recordSettings = [AVSampleRateKey : NSNumber(value: Float(44100) as Float),
-                                  AVFormatIDKey : NSNumber(value: Int32(kAudioFormatMPEG4AAC) as Int32),
-                                  AVNumberOfChannelsKey : NSNumber(value: 1 as Int32),
-                                  AVEncoderAudioQualityKey : NSNumber(value: Int32(AVAudioQuality.high.rawValue) as Int32)]
-            
-            recorder = try AVAudioRecorder(url: audioURL, settings: recordSettings)
-            recorder?.prepareToRecord()
-            
-        }
-        catch  {
-            throw error
-        }
+        session = AVAudioSession.sharedInstance()
+        
+                session.requestRecordPermission()
+                {
+                    [unowned self] allowed in
+                    
+                    if allowed
+                    {
+                        do {
+                        // 2. configure the session for recording and playback
+                            try self.session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
+                            try self.session.setActive(true)
+                        // 3. set up a high-quality recording session
+                        let settings = [
+                            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+                            AVSampleRateKey: 44100,
+                            AVNumberOfChannelsKey: 2,
+                            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+                            ]
+                        // 4. create the audio recording, and assign ourselves as the delegate
+                    
+                            self.recorder = try AVAudioRecorder(url: self.audioURL(), settings: settings)
+                            self.recorder?.prepareToRecord()
+                        }
+                            catch  {
+                                return
+                            }
+                        
+                    }
+                }
+       
     }
     
     @IBAction func dismissButtonDidTouched(_ sender: UIButton)

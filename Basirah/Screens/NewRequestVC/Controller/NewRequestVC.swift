@@ -75,7 +75,11 @@ class NewRequestVC: UIViewController {
         self.datePickerView.isHidden = false
     }
     
-
+    @IBAction func dismissButtonDidTouched(_ sender: UIButton)
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

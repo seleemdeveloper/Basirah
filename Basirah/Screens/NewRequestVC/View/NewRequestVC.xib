@@ -42,11 +42,27 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIR-YE-ohA">
+                                            <rect key="frame" x="8" y="0.0" width="60" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="VLx-fI-O6a"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <state key="normal" title="الغاء">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="dismissButtonDidTouched:" destination="-1" eventType="touchUpInside" id="u6H-cf-55r"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                     <constraints>
                                         <constraint firstItem="7De-kE-Nml" firstAttribute="centerX" secondItem="KQU-7s-zlj" secondAttribute="centerX" id="BHq-lX-6GT"/>
+                                        <constraint firstItem="sIR-YE-ohA" firstAttribute="leading" secondItem="KQU-7s-zlj" secondAttribute="leading" constant="8" id="KdM-sf-XJ3"/>
+                                        <constraint firstItem="sIR-YE-ohA" firstAttribute="top" secondItem="KQU-7s-zlj" secondAttribute="top" id="Ows-t5-AEs"/>
                                         <constraint firstAttribute="height" constant="100" id="bnl-oz-Pv9"/>
+                                        <constraint firstAttribute="bottom" secondItem="sIR-YE-ohA" secondAttribute="bottom" id="jbN-aY-GO8"/>
                                         <constraint firstItem="7De-kE-Nml" firstAttribute="centerY" secondItem="KQU-7s-zlj" secondAttribute="centerY" id="ySj-WO-LCG"/>
                                     </constraints>
                                 </view>

@@ -17,17 +17,21 @@ struct RequestKeys
     static let bookAuthor = "bookAuthor"
     static let bookCategory = "bookCategory"
     static let dueDate = "dueDate"
+    
 }
 
 
 class Request: Mappable
 {
-    
+    var requestOwner: String!
+    var bookDate: String!
+
     var bookName: String!
     var bookAuthor: String!
     var bookCategory: String!
     var bookDueDate: String!
-    var bookDate: String!
+    
+    var response: Response?
     
     required init?(map: Map) {
         
@@ -38,6 +42,32 @@ class Request: Mappable
         bookAuthor <- map[RequestKeys.bookAuthor]
         bookCategory <- map[RequestKeys.bookCategory]
         bookDueDate <- map[RequestKeys.dueDate]
+    }
+}
+
+struct ResponseKeys
+{
+    static let date = "date"
+    static let url = "url"
+    static let volunteer = "volunteer"
+    
+}
+
+
+class Response: Mappable
+{
+    var volunteer: String!
+    var url: String!
+    var date: String!
+    
+    required init?(map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        
+        volunteer <- map[ResponseKeys.volunteer]
+        url <- map[ResponseKeys.url]
+        date <- map[ResponseKeys.date]
     }
 }
 
