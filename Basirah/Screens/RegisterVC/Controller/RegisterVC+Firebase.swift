@@ -20,7 +20,7 @@ extension RegisterVC
         
             (user, error) in
             
-            guard let user = user, error == nil else
+            guard let _ = user, error == nil else
             {
                 failureHandler("تعذر تسجيل مستخدم جديد ربما يكون مسجل سابقا حاول مرة اخري")
                 return

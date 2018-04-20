@@ -20,7 +20,7 @@ extension LoginVC
         {
             (user, error) in
             
-            guard let user = user, error == nil else
+            guard let _ = user, error == nil else
             {
                 failureHandler("تعذر تسجيل الدخول تأكد من البريد الالكتروني وكلمة المرور ثم حاول مرة اخري")
                 return

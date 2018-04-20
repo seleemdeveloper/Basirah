@@ -27,6 +27,17 @@
 		E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2648A3920884ED90096FC0E /* RequestsVC.swift */; };
 		E26B886F20894EB000BC5EED /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */; };
 		E26B88722089523600BC5EED /* ProfileVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B88712089523600BC5EED /* ProfileVC+Router.swift */; };
+		E26B887620895F2A00BC5EED /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B887520895F2A00BC5EED /* RequestCell.swift */; };
+		E26B887820895F3E00BC5EED /* ResponseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B887720895F3E00BC5EED /* ResponseCell.swift */; };
+		E26B887F208961C700BC5EED /* NewRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B887D208961C700BC5EED /* NewRequestVC.swift */; };
+		E26B8880208961C700BC5EED /* NewRequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26B887E208961C700BC5EED /* NewRequestVC.xib */; };
+		E26B88822089668D00BC5EED /* RequestsVC+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B88812089668D00BC5EED /* RequestsVC+Router.swift */; };
+		E26B8884208969D000BC5EED /* NewRequestVC+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B8883208969D000BC5EED /* NewRequestVC+Keyboard.swift */; };
+		E26B888620896CA200BC5EED /* NewRequestVC+Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888520896CA200BC5EED /* NewRequestVC+Categories.swift */; };
+		E26B888A2089743600BC5EED /* NewRequestVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B88892089743600BC5EED /* NewRequestVC+Validator.swift */; };
+		E26B888C208975F100BC5EED /* NewRequestVC+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888B208975F100BC5EED /* NewRequestVC+Firebase.swift */; };
+		E26B888E208977D300BC5EED /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888D208977D300BC5EED /* Request.swift */; };
+		E26B889020897C9C00BC5EED /* NewRequestVC+DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B888F20897C9C00BC5EED /* NewRequestVC+DatePickerView.swift */; };
 		E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */; };
 		E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DF52088437A00069AD5 /* DashboardVC.swift */; };
 		E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DFC20884B5900069AD5 /* ProfileVC.swift */; };
@@ -66,6 +77,17 @@
 		E2648A3920884ED90096FC0E /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
 		E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E26B88712089523600BC5EED /* ProfileVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+Router.swift"; sourceTree = "<group>"; };
+		E26B887520895F2A00BC5EED /* RequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		E26B887720895F3E00BC5EED /* ResponseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCell.swift; sourceTree = "<group>"; };
+		E26B887D208961C700BC5EED /* NewRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRequestVC.swift; sourceTree = "<group>"; };
+		E26B887E208961C700BC5EED /* NewRequestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewRequestVC.xib; sourceTree = "<group>"; };
+		E26B88812089668D00BC5EED /* RequestsVC+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestsVC+Router.swift"; sourceTree = "<group>"; };
+		E26B8883208969D000BC5EED /* NewRequestVC+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+Keyboard.swift"; sourceTree = "<group>"; };
+		E26B888520896CA200BC5EED /* NewRequestVC+Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+Categories.swift"; sourceTree = "<group>"; };
+		E26B88892089743600BC5EED /* NewRequestVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+Validator.swift"; sourceTree = "<group>"; };
+		E26B888B208975F100BC5EED /* NewRequestVC+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+Firebase.swift"; sourceTree = "<group>"; };
+		E26B888D208977D300BC5EED /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E26B888F20897C9C00BC5EED /* NewRequestVC+DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewRequestVC+DatePickerView.swift"; sourceTree = "<group>"; };
 		E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoardVC.storyboard; sourceTree = "<group>"; };
 		E2894DF52088437A00069AD5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		E2894DFC20884B5900069AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -142,6 +164,7 @@
 		2B66C3522085188C0005B38C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E26B88792089618900BC5EED /* NewRequestVC */,
 				E2894DFB20884B3500069AD5 /* Requests */,
 				E2894DFA20884B2E00069AD5 /* Settings */,
 				E2894DF920884B2600069AD5 /* Profile */,
@@ -244,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				E2648A3920884ED90096FC0E /* RequestsVC.swift */,
+				E26B88812089668D00BC5EED /* RequestsVC+Router.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +278,61 @@
 				E26B886E20894EB000BC5EED /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E26B887320895ECE00BC5EED /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E26B887520895F2A00BC5EED /* RequestCell.swift */,
+				E26B887720895F3E00BC5EED /* ResponseCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E26B887420895ED700BC5EED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26B88792089618900BC5EED /* NewRequestVC */ = {
+			isa = PBXGroup;
+			children = (
+				E26B887C208961A600BC5EED /* Controller */,
+				E26B887B208961A100BC5EED /* Model */,
+				E26B887A2089619A00BC5EED /* View */,
+			);
+			path = NewRequestVC;
+			sourceTree = "<group>";
+		};
+		E26B887A2089619A00BC5EED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E26B887E208961C700BC5EED /* NewRequestVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E26B887B208961A100BC5EED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E26B888D208977D300BC5EED /* Request.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E26B887C208961A600BC5EED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26B887D208961C700BC5EED /* NewRequestVC.swift */,
+				E26B8883208969D000BC5EED /* NewRequestVC+Keyboard.swift */,
+				E26B888520896CA200BC5EED /* NewRequestVC+Categories.swift */,
+				E26B88892089743600BC5EED /* NewRequestVC+Validator.swift */,
+				E26B888B208975F100BC5EED /* NewRequestVC+Firebase.swift */,
+				E26B888F20897C9C00BC5EED /* NewRequestVC+DatePickerView.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E2894DF920884B2600069AD5 /* Profile */ = {
@@ -275,6 +354,8 @@
 		E2894DFB20884B3500069AD5 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				E26B887420895ED700BC5EED /* Model */,
+				E26B887320895ECE00BC5EED /* view */,
 				E2648A3820884EC50096FC0E /* Controller */,
 			);
 			path = Requests;
@@ -401,6 +482,7 @@
 				E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */,
 				2B3277052085307100D78A62 /* GoogleService-Info.plist in Resources */,
 				2B2340142085343800444593 /* RegisterVC.xib in Resources */,
+				E26B8880208961C700BC5EED /* NewRequestVC.xib in Resources */,
 				2B66C344208518620005B38C /* Assets.xcassets in Resources */,
 				2B66C342208518620005B38C /* Main.storyboard in Resources */,
 			);
@@ -481,20 +563,30 @@
 				2B66C370208520060005B38C /* User.swift in Sources */,
 				2B2340102085337300444593 /* LoginVC+Router.swift in Sources */,
 				2B66C33D208518620005B38C /* AppDelegate.swift in Sources */,
+				E26B888E208977D300BC5EED /* Request.swift in Sources */,
 				E2101D98208901E200F010FD /* ProfileVC+Realm.swift in Sources */,
 				E29E35B7208823F200761300 /* LoginVC+Validator.swift in Sources */,
 				E29192FC2088F72800EA1FE4 /* ProfileVC+Firebase.swift in Sources */,
+				E26B88822089668D00BC5EED /* RequestsVC+Router.swift in Sources */,
+				E26B887620895F2A00BC5EED /* RequestCell.swift in Sources */,
 				E26B88722089523600BC5EED /* ProfileVC+Router.swift in Sources */,
 				E26B886F20894EB000BC5EED /* UIViewControllerExtension.swift in Sources */,
+				E26B888620896CA200BC5EED /* NewRequestVC+Categories.swift in Sources */,
 				2B2340132085343800444593 /* RegisterVC.swift in Sources */,
+				E26B889020897C9C00BC5EED /* NewRequestVC+DatePickerView.swift in Sources */,
 				2B66C36520851B6A0005B38C /* LoginVC.swift in Sources */,
+				E26B888C208975F100BC5EED /* NewRequestVC+Firebase.swift in Sources */,
+				E26B888A2089743600BC5EED /* NewRequestVC+Validator.swift in Sources */,
 				E2A1AF0B20880DE600216E4E /* RegisterVC+Keyboard.swift in Sources */,
 				2B66C372208523770005B38C /* LoginVC+Keyboard.swift in Sources */,
 				E2A1AF0F208813DD00216E4E /* RegisterVC+Firebase.swift in Sources */,
+				E26B8884208969D000BC5EED /* NewRequestVC+Keyboard.swift in Sources */,
 				E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */,
 				E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */,
 				E2A1AF122088164400216E4E /* Defaults.swift in Sources */,
+				E26B887820895F3E00BC5EED /* ResponseCell.swift in Sources */,
 				E2101D962088FE1D00F010FD /* ProfileVC+MSG.swift in Sources */,
+				E26B887F208961C700BC5EED /* NewRequestVC.swift in Sources */,
 				E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */,
 				E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */,
 				E2648A3A20884ED90096FC0E /* RequestsVC.swift in Sources */,
@@ -645,7 +737,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.softwareEngineering.basirah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -661,7 +753,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.softwareEngineering.basirah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
