@@ -24,6 +24,7 @@ extension NewRequestVC
         }
         
         let requestBody:[String:String] = [
+            RequestKeys.requesterName : (currentUser()?.name) ?? "",
             RequestKeys.bookName : bookName,
             RequestKeys.bookAuthor : bookAuthor,
             RequestKeys.bookCategory : category,

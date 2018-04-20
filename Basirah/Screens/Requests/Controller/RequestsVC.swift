@@ -16,13 +16,22 @@ class RequestsVC: UIViewController {
     var ref: DatabaseReference!
     @IBOutlet weak var tableView: UITableView!
     
-    var requests: [Request] = []
+    var requestsWithoutResponses: [Request] = []
     {
         didSet
         {
             self.tableView.reloadData()
         }
     }
+    
+    var requestsWithResponses: [Request] = []
+    {
+        didSet
+        {
+            self.tableView.reloadData()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +42,9 @@ class RequestsVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.getCurrentUserRequests({ (requests) in
-            self.requests = requests
+        self.getCurrentUserRequests({ (requests,responses) in
+            self.requestsWithoutResponses = requests
+            self.requestsWithResponses = responses
         }) { (msg) in
             self.showDefaultAlert(title: "خطأ في تحميل الطلبات", message: msg)
         }

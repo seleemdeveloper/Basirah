@@ -14,7 +14,7 @@ extension RecorderVC
 {
     
     
-    func uploadAudioFile(with request: Request,fileURL url: URL,_ successHandler:@escaping ()->(),_ failHandler: @escaping (_ msg: String)->(),progess: @escaping (_ progress: Double)->())
+    func uploadAudioFile(with request: Request,fileURL url: URL,_ successHandler:@escaping ()->(),_ failHandler: @escaping (_ msg: String)->(),progess: @escaping (_ progress: String)->())
     {
         
         let storage =  Storage.storage()
@@ -46,6 +46,7 @@ extension RecorderVC
            
                 let responseDict =
                     [
+                        ResponseKeys.volunteerName : currentUser()?.name ?? "",
                         ResponseKeys.date : Date().description,
                         ResponseKeys.url : downloadURL?.absoluteString ?? "",
                         ResponseKeys.volunteer : userID
@@ -64,9 +65,15 @@ extension RecorderVC
         {
             snapshot in
             // Upload reported progress
-            let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
-                / Double(snapshot.progress!.totalUnitCount)
-            progess(percentComplete)
+            guard let progress = snapshot.progress else {return}
+            if progress.totalUnitCount != 0
+            {
+            let percentComplete: Int = Int(100.0 * Double(progress.completedUnitCount)
+                / Double(progress.totalUnitCount))
+                progess("\(percentComplete)")
+
+            }
+            
         }
         
         uploadTask.observe(.success) { snapshot in

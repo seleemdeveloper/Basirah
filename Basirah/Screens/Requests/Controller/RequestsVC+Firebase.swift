@@ -12,7 +12,7 @@ import Firebase
 extension RequestsVC
 {
  
-    func getCurrentUserRequests(_ successHandler:@escaping (_ requests: [Request])->(),_ failHandler: @escaping (_ msg: String)->())
+    func getCurrentUserRequests(_ successHandler:@escaping (_ requestsWithoutResponse: [Request],_ requestsWitResponse: [Request])->(),_ failHandler: @escaping (_ msg: String)->())
   {
         ref = Database.database().reference()
         guard let userID = Auth.auth().currentUser?.uid else
@@ -34,6 +34,7 @@ extension RequestsVC
         }
         
         var requests:[Request] = []
+        var responses:[Request] = []
         for (requestTimestamp,requestDict) in requestsDict
         {
             let date = Date(timeIntervalSince1970: Double(requestTimestamp) ?? 0.0)
@@ -45,9 +46,16 @@ extension RequestsVC
             request.bookDate = date.description
             request.requestOwner = userID
             request.requestTimestamp = requestTimestamp
-            requests.append(request)
+            if request.response == nil
+            {
+             requests.append(request)
+            }
+            else
+            {
+              responses.append(request)
+            }
         }
-        successHandler(requests)
+        successHandler(requests,responses)
     }
     
     

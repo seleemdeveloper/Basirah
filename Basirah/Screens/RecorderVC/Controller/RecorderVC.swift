@@ -76,6 +76,7 @@ class RecorderVC: UIViewController {
         recorderImgView.image = #imageLiteral(resourceName: "recorder-icon")
         disableClearButton()
         disablePlayButton()
+        disableFinishButton()
         
         uploadAudioFile(with: request, fileURL: recorder.url,
         {
@@ -84,10 +85,20 @@ class RecorderVC: UIViewController {
         }, { (msg) in
             
             self.showDefaultAlert(title: "خطأ", message: msg)
+            self.enablePlayButton()
+            self.enableClearButton()
+            self.enableFinishButton()
             
-        }) { (progess) in
+        }) { (progress) in
+            
+            
             self.uploadingIndicatorLabel.isHidden = false
-            self.uploadingIndicatorLabel.text = "جاري رفع الملف الصوتي \(progess)"
+            
+            var msg = " جاري رفع الملف الصوتي"
+            msg += progress.arabicNumber()
+            msg += "٪"
+            
+            self.uploadingIndicatorLabel.text = msg
         }
     }
     
