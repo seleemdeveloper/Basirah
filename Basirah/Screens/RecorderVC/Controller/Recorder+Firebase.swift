@@ -21,7 +21,7 @@ extension RecorderVC
         let storageRef = storage.reference()
         
          var fileRef  = "/" + request.requestOwner
-             fileRef += "/" + request.bookDate
+             fileRef += "/" + request.requestTimestamp
              fileRef += "/" + "audio.m4a"
         
         let audioFileRef = storageRef.child(fileRef)
@@ -50,7 +50,9 @@ extension RecorderVC
                         ResponseKeys.url : downloadURL?.absoluteString ?? "",
                         ResponseKeys.volunteer : userID
                     ]
-            ref.child("requests").child(request.requestOwner).child(request.bookDate).child("response").setValue(responseDict)
+                
+               
+            ref.child("requests").child(request.requestOwner).child(request.requestTimestamp).child("response").setValue(responseDict)
                 
                 
             }

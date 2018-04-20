@@ -18,14 +18,18 @@ struct RequestKeys
     static let bookCategory = "bookCategory"
     static let dueDate = "dueDate"
     
+    static let response = "response"
+    
 }
 
 
 class Request: Mappable
 {
+    
     var requestOwner: String!
+    var requestTimestamp: String!
     var bookDate: String!
-
+    
     var bookName: String!
     var bookAuthor: String!
     var bookCategory: String!
@@ -42,6 +46,8 @@ class Request: Mappable
         bookAuthor <- map[RequestKeys.bookAuthor]
         bookCategory <- map[RequestKeys.bookCategory]
         bookDueDate <- map[RequestKeys.dueDate]
+        
+        response <- map[RequestKeys.response]
     }
 }
 

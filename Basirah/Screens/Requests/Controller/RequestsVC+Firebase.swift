@@ -27,7 +27,7 @@ extension RequestsVC
     {
         
         (snapshot, str) in
-        guard let requestsDict = snapshot.value as? [String:[String:String]] else
+        guard let requestsDict = snapshot.value as? [String:[String:AnyObject]] else
         {
             failHandler("حدث خطأ في تحميل الطلبات")
             return
@@ -44,6 +44,7 @@ extension RequestsVC
             }
             request.bookDate = date.description
             request.requestOwner = userID
+            request.requestTimestamp = requestTimestamp
             requests.append(request)
         }
         successHandler(requests)

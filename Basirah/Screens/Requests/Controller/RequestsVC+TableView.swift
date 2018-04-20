@@ -39,8 +39,8 @@ extension RequestsVC: UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-    
         let recorder = RecorderVC(nibName: "RecorderVC", bundle: nil)
+        recorder.request = requests[indexPath.row]
         self.present(recorder, animated: true, completion: nil)
     }
     
