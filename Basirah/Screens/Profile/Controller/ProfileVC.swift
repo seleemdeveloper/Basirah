@@ -14,14 +14,15 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var msgIndicatorLabel: UILabel!
 
+    @IBOutlet weak var emailLabel: UILabel!
     
     var ref: DatabaseReference!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.nameTextField.text = getCurrentUserName()
+        self.emailLabel.text = getCurrentUserEmail()
     }
     
     override func viewDidAppear(_ animated: Bool) {

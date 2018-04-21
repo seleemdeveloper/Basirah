@@ -34,7 +34,12 @@ extension ProfileVC
             return
         }
         
-        self.ref.child("users").child(userID).setValue(["name": name])
+        let dict =
+            [
+                "name" : name,
+                "type" : currentUser.type
+            ]
+        self.ref.child("users").child(userID).setValue(dict)
         
         
         try? realm.write

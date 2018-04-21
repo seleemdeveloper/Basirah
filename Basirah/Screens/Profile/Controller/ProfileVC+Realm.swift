@@ -15,6 +15,10 @@ extension ProfileVC
         return currentUser()?.name ?? ""
     }
     
+    func getCurrentUserEmail()->String
+    {
+        return currentUser()?.email ?? ""
+    }
     
     func defaultLogout()
     {

@@ -13,6 +13,15 @@ class DashboardVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let volunteerRequestsVC = VolunteerRequests(nibName: "VolunteerRequests", bundle: nil)
+        let tabBarItem = UITabBarItem(title: "طلبات المستمعين", image: #imageLiteral(resourceName: "request-icon"), tag: 1)
+        volunteerRequestsVC.tabBarItem = tabBarItem
+        
+        guard let currentUser = currentUser() else { return }
+        if currentUser.type == UserType.volunteer
+        {
+            self.viewControllers![1] = volunteerRequestsVC
+        }
         self.selectedViewController = self.viewControllers?[1]
 
         // Do any additional setup after loading the view.

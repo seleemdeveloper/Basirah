@@ -78,7 +78,7 @@ class RequestsVC: UIViewController {
             self.tableView.refreshControl?.endRefreshing()
 
         }) { (msg) in
-            self.showDefaultAlert(title: "خطأ في تحميل الطلبات", message: msg)
+            self.showDefaultAlert(title: "تحميل الطلبات", message: msg)
         }
     }
    

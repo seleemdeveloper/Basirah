@@ -19,9 +19,7 @@ extension LoginVC
         Auth.auth().signIn(withEmail: email, password: password)
         {
             (user, error) in
-            
-            var typeDefined = false
-            
+                        
             guard let user = user, error == nil else
             {
                 failureHandler("تعذر تسجيل الدخول تأكد من البريد الالكتروني وكلمة المرور ثم حاول مرة اخري")
@@ -43,8 +41,8 @@ extension LoginVC
                         return
                     }
                     
-                    var type = userDict["type"] ?? ""
-                    var name = userDict["name"] ?? ""
+                    let type = userDict["type"] ?? ""
+                    let name = userDict["name"] ?? ""
                     //================================
                     
                     guard let realm = AppDelegate.realm else

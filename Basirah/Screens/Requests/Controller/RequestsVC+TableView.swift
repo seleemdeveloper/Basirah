@@ -40,9 +40,7 @@ extension RequestsVC: UITableViewDelegate,UITableViewDataSource
     }
     
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 40.0
-    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if section == 0

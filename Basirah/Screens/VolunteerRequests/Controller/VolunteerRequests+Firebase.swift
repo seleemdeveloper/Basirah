@@ -1,5 +1,5 @@
 //
-//  Requests+Firebase.swift
+//  VolunteerRequests+Firebase.swift
 //  Basirah
 //
 //  Created by Ahmed Seleem on 4/20/18.
@@ -9,10 +9,10 @@
 import Foundation
 import Firebase
 
-extension RequestsVC
+extension VolunteerRequests
 {
  
-    func getCurrentUserRequests(_ successHandler:@escaping (_ requestsWithoutResponse: [Request],_ requestsWitResponse: [Request])->(),_ failHandler: @escaping (_ msg: String)->())
+    func getAllRequests(_ successHandler:@escaping (_ requests: [Request])->(),_ failHandler: @escaping (_ msg: String)->())
   {
         ref = Database.database().reference()
         guard let userID = Auth.auth().currentUser?.uid else
@@ -29,12 +29,11 @@ extension RequestsVC
         (snapshot, str) in
         guard let requestsDict = snapshot.value as? [String:[String:AnyObject]] else
         {
-            failHandler("لا توجد طلبات سابقة")
+            failHandler("لا توجد طلبات حتي الآن")
             return
         }
         
         var requests:[Request] = []
-        var responses:[Request] = []
         for (requestTimestamp,requestDict) in requestsDict
         {
             let date = Date(timeIntervalSince1970: Double(requestTimestamp) ?? 0.0)
@@ -50,12 +49,9 @@ extension RequestsVC
             {
              requests.append(request)
             }
-            else
-            {
-              responses.append(request)
-            }
+            
         }
-        successHandler(requests,responses)
+        successHandler(requests)
     }
     
     
