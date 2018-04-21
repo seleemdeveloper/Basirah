@@ -62,6 +62,8 @@
 		E27F3D6A208ADD7F00341472 /* VolunteerRequests+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D67208ADD7F00341472 /* VolunteerRequests+Router.swift */; };
 		E27F3D6B208ADD7F00341472 /* VolunteerRequests+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D68208ADD7F00341472 /* VolunteerRequests+Firebase.swift */; };
 		E27F3D6D208AED2100341472 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27F3D6C208AED2100341472 /* RequestCell.xib */; };
+		E27F3D6F208AEF3C00341472 /* LoginVC+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D6E208AEF3C00341472 /* LoginVC+TextField.swift */; };
+		E27F3D71208AEFC700341472 /* RegisterVC+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D70208AEFC700341472 /* RegisterVC+TextField.swift */; };
 		E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */; };
 		E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DF52088437A00069AD5 /* DashboardVC.swift */; };
 		E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DFC20884B5900069AD5 /* ProfileVC.swift */; };
@@ -136,6 +138,8 @@
 		E27F3D67208ADD7F00341472 /* VolunteerRequests+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VolunteerRequests+Router.swift"; sourceTree = "<group>"; };
 		E27F3D68208ADD7F00341472 /* VolunteerRequests+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VolunteerRequests+Firebase.swift"; sourceTree = "<group>"; };
 		E27F3D6C208AED2100341472 /* RequestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
+		E27F3D6E208AEF3C00341472 /* LoginVC+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC+TextField.swift"; sourceTree = "<group>"; };
+		E27F3D70208AEFC700341472 /* RegisterVC+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterVC+TextField.swift"; sourceTree = "<group>"; };
 		E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoardVC.storyboard; sourceTree = "<group>"; };
 		E2894DF52088437A00069AD5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		E2894DFC20884B5900069AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 				2B2340152085357300444593 /* LoginVC+Firebase.swift */,
 				E29E35B4208823CC00761300 /* LoginVC+MSG.swift */,
 				E29E35B6208823F200761300 /* LoginVC+Validator.swift */,
+				E27F3D6E208AEF3C00341472 /* LoginVC+TextField.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				E2A1AF0C208813B500216E4E /* RegisterVC+Router.swift */,
 				E2A1AF0E208813DD00216E4E /* RegisterVC+Firebase.swift */,
 				E2A1AF1D20881CC700216E4E /* RegisterVC+MSG.swift */,
+				E27F3D70208AEFC700341472 /* RegisterVC+TextField.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -726,8 +732,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27F3D71208AEFC700341472 /* RegisterVC+TextField.swift in Sources */,
 				2B2340162085357300444593 /* LoginVC+Firebase.swift in Sources */,
 				E27F3D54208A9A9F00341472 /* UpdateRequestVC+Categories.swift in Sources */,
+				E27F3D6F208AEF3C00341472 /* LoginVC+TextField.swift in Sources */,
 				E27F3D49208A9A0E00341472 /* UpdateRequestVC.swift in Sources */,
 				2B66C370208520060005B38C /* User.swift in Sources */,
 				2B2340102085337300444593 /* LoginVC+Router.swift in Sources */,

@@ -26,10 +26,31 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerKeyboardNotifications()
+        
+        emailTextFiled.delegate = self
+        passwordTextField.delegate = self
+        repeatPasswordTextField.delegate = self
     }
 
   
     @IBAction func signupButtonDidTouched(_ sender: UIButton)
+    {
+        register()
+    }
+    
+    
+    @IBAction func volunteerCheckBoxDidTouched(_ sender: GDCheckbox)
+    {
+        requesterBox.isOn = false
+    }
+    
+    @IBAction func requesterBoxDidTouched(_ sender: GDCheckbox)
+    {
+        volunteerBox.isOn = false
+    }
+    
+    
+    func register()
     {
         guard let email = emailTextFiled.text,let password1 = passwordTextField.text,let password2 = repeatPasswordTextField.text else {
             return
@@ -42,12 +63,12 @@ class RegisterVC: UIViewController {
             if isValid
             {
                 register(email: email, password: password1, type: type, successHandler:
-                {
-                   self.route(to: .dashboard)
+                    {
+                        self.route(to: .dashboard)
                 }, failureHandler:
-                {
-                    msg in
-                    self.showMSG(with: msg)
+                    {
+                        msg in
+                        self.showMSG(with: msg)
                 })
             }
             else
@@ -55,17 +76,6 @@ class RegisterVC: UIViewController {
                 showMSG(with: msg)
             }
         }
-    }
-    
-    
-    @IBAction func volunteerCheckBoxDidTouched(_ sender: GDCheckbox)
-    {
-        requesterBox.isOn = false
-    }
-    
-    @IBAction func requesterBoxDidTouched(_ sender: GDCheckbox)
-    {
-        volunteerBox.isOn = false
     }
     
 

@@ -25,6 +25,9 @@ class LoginVC: UIViewController {
         
         registerKeyboardNotifications()
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
 
     }
 
@@ -34,6 +37,18 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginButtonDidTouched(_ sender: UIButton)
+    {
+        login()
+    }
+    
+    
+    @IBAction func forgetPasswordButtonDidTouched(_ sender: UIButton)
+    {
+        route(to: .forgetPassword)
+    }
+    
+    
+    func login()
     {
         guard let email = emailTextField.text,let password = passwordTextField.text else {
             return
@@ -58,12 +73,6 @@ class LoginVC: UIViewController {
                 showMSG(with: msg)
             }
         }
-    }
-    
-    
-    @IBAction func forgetPasswordButtonDidTouched(_ sender: UIButton)
-    {
-        route(to: .forgetPassword)
     }
     
 }
