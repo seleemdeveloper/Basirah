@@ -20,41 +20,71 @@ extension LoginVC
         {
             (user, error) in
             
-            guard let _ = user, error == nil else
+            var typeDefined = false
+            
+            guard let user = user, error == nil else
             {
                 failureHandler("تعذر تسجيل الدخول تأكد من البريد الالكتروني وكلمة المرور ثم حاول مرة اخري")
                 return
             }
             
-            guard let realm = AppDelegate.realm else
-            {
-                failureHandler("تعذر تسجيل الدخول")
-                return
-            }
+           
+            //=================================
             
-            let realmUser = User()
-            realmUser.email = email
-            realmUser.password = password
+            self.ref = Database.database().reference()
             
-            do
-            {
-                if !isRegisteredEmail(email: email)
+                self.ref.child("users").child(user.uid).observeSingleEvent(of: .value)
                 {
-                    try realm.write
+                    
+                    (snapshot, str) in
+                    guard let userDict = snapshot.value as? [String:String] else
                     {
-                        realm.add(realmUser)
+                        failureHandler("تعذر تسجيل الدخول")
+                        return
                     }
-                }
-                Defaults.set(key: DefaultsKeys.loggedUser.rawValue, for: realmUser.email)
-                successHandler()
-            }
-            catch
-            {
-                failureHandler("تعذر تسجيل الدخول")
+                    
+                    var type = userDict["type"] ?? ""
+                    var name = userDict["name"] ?? ""
+                    //================================
+                    
+                    guard let realm = AppDelegate.realm else
+                    {
+                        failureHandler("تعذر تسجيل الدخول")
+                        return
+                    }
+                    
+                    
+                    let realmUser = User()
+                    realmUser.email = email
+                    realmUser.password = password
+                    realmUser.type = type
+                    realmUser.name = name
+                    
+                    do
+                    {
+                        if !isRegisteredEmail(email: email)
+                        {
+                            try realm.write
+                            {
+                                realm.add(realmUser)
+                            }
+                        }
+                        Defaults.set(key: DefaultsKeys.loggedUser.rawValue, for: realmUser.email)
+                        successHandler()
+                    }
+                    catch
+                    {
+                        failureHandler("تعذر تسجيل الدخول")
+                    }
+                    
             }
             
-        }
-        
+                    
+                }
+            
+            
+            
+            
     }
             
             

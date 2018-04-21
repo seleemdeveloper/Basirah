@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class LoginVC: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,6 +18,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var msgIndicatorLabel: UILabel!
 
     
+    var ref: DatabaseReference!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

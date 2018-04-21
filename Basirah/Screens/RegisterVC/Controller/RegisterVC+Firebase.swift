@@ -36,6 +36,7 @@ extension RegisterVC
             let realmUser = User()
             realmUser.email = email
             realmUser.password = password
+            realmUser.type = type
             
             do
             {
