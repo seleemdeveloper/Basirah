@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterVC: UIViewController {
     @IBOutlet weak var emailTextFiled: UITextField!
@@ -17,6 +18,11 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var msgIndicatorLabel: UILabel!
     
+    @IBOutlet weak var volunteerBox: GDCheckbox!
+     @IBOutlet weak var requesterBox: GDCheckbox!
+    
+    var ref: DatabaseReference!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerKeyboardNotifications()
@@ -32,9 +38,10 @@ class RegisterVC: UIViewController {
         {
             (isValid, msg) in
             
+            let type = self.volunteerBox.isOn ? UserType.volunteer : UserType.requester
             if isValid
             {
-                register(email: email, password: password1, successHandler:
+                register(email: email, password: password1, type: type, successHandler:
                 {
                    self.route(to: .dashboard)
                 }, failureHandler:
@@ -48,6 +55,17 @@ class RegisterVC: UIViewController {
                 showMSG(with: msg)
             }
         }
+    }
+    
+    
+    @IBAction func volunteerCheckBoxDidTouched(_ sender: GDCheckbox)
+    {
+        requesterBox.isOn = false
+    }
+    
+    @IBAction func requesterBoxDidTouched(_ sender: GDCheckbox)
+    {
+        volunteerBox.isOn = false
     }
     
 

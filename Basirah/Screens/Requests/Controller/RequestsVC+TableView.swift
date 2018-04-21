@@ -115,7 +115,7 @@ extension RequestsVC: UITableViewDelegate,UITableViewDataSource
         }
         else
         {
-            return 350
+            return 330
         }
     }
     

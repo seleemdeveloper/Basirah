@@ -163,8 +163,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="320.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mz7-lF-KEX" userLabel="seperator">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="c8w-ga-7bm"/>
+                                                    </constraints>
+                                                </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nhk-XX-vB7">
-                                                    <rect key="frame" x="255" y="0.0" width="120" height="250"/>
+                                                    <rect key="frame" x="255" y="20" width="120" height="250"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الكتاب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ral-YS-i0K">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
@@ -204,7 +211,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nwl-8t-E2c">
-                                                    <rect key="frame" x="0.0" y="0.0" width="255" height="250"/>
+                                                    <rect key="frame" x="0.0" y="20" width="255" height="250"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الرجال من المريخ والنساء من الزهرة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-iX-MZD">
                                                             <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
@@ -242,10 +249,10 @@
                                                     </constraints>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nc9-wV-Dgh">
-                                                    <rect key="frame" x="0.0" y="250" width="375" height="70.5"/>
+                                                    <rect key="frame" x="0.0" y="270" width="375" height="50.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم الرد بواسطة " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-mT-mKa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="367" height="70.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="367" height="50.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -262,14 +269,17 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.60039383170000005" green="0.59964960810000001" blue="0.19955909250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
+                                                <constraint firstItem="mz7-lF-KEX" firstAttribute="leading" secondItem="hrm-n6-QeK" secondAttribute="leading" id="0ZF-Da-2Nn"/>
                                                 <constraint firstItem="nhk-XX-vB7" firstAttribute="leading" secondItem="nwl-8t-E2c" secondAttribute="trailing" id="3yP-Jm-SEg"/>
+                                                <constraint firstItem="nhk-XX-vB7" firstAttribute="top" secondItem="mz7-lF-KEX" secondAttribute="bottom" id="5pe-hZ-91K"/>
+                                                <constraint firstItem="mz7-lF-KEX" firstAttribute="top" secondItem="hrm-n6-QeK" secondAttribute="top" id="Bac-bL-EwU"/>
+                                                <constraint firstItem="nwl-8t-E2c" firstAttribute="top" secondItem="mz7-lF-KEX" secondAttribute="bottom" id="J3o-va-Kic"/>
                                                 <constraint firstItem="nwl-8t-E2c" firstAttribute="leading" secondItem="hrm-n6-QeK" secondAttribute="leading" id="Lnp-Ff-z0Z"/>
                                                 <constraint firstAttribute="trailing" secondItem="nc9-wV-Dgh" secondAttribute="trailing" id="Mw7-Q5-RyL"/>
                                                 <constraint firstAttribute="trailing" secondItem="nhk-XX-vB7" secondAttribute="trailing" id="RcL-Gp-g9m"/>
                                                 <constraint firstItem="nc9-wV-Dgh" firstAttribute="leading" secondItem="hrm-n6-QeK" secondAttribute="leading" id="WpU-iA-aqv"/>
-                                                <constraint firstItem="nhk-XX-vB7" firstAttribute="top" secondItem="hrm-n6-QeK" secondAttribute="top" id="Y8k-es-VW2"/>
                                                 <constraint firstItem="nc9-wV-Dgh" firstAttribute="top" secondItem="nhk-XX-vB7" secondAttribute="bottom" id="gW1-vb-7jb"/>
-                                                <constraint firstItem="nwl-8t-E2c" firstAttribute="top" secondItem="hrm-n6-QeK" secondAttribute="top" id="i2j-Wy-jUc"/>
+                                                <constraint firstAttribute="trailing" secondItem="mz7-lF-KEX" secondAttribute="trailing" id="rbg-uC-2by"/>
                                                 <constraint firstItem="nhk-XX-vB7" firstAttribute="leading" secondItem="nwl-8t-E2c" secondAttribute="trailing" id="slC-JC-gJ7"/>
                                                 <constraint firstAttribute="bottom" secondItem="nc9-wV-Dgh" secondAttribute="bottom" id="zCg-zt-XXC"/>
                                             </constraints>
@@ -310,6 +320,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mhS-8C-T96" firstAttribute="top" secondItem="GoD-UH-l35" secondAttribute="bottom" id="7Hy-7k-ebY"/>
                             <constraint firstItem="GoD-UH-l35" firstAttribute="leading" secondItem="Kwi-x4-mIw" secondAttribute="leading" id="Bdq-kB-PEz"/>
@@ -320,6 +331,9 @@
                             <constraint firstItem="GoD-UH-l35" firstAttribute="trailing" secondItem="Kwi-x4-mIw" secondAttribute="trailing" id="v2O-UY-Peq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kwi-x4-mIw"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zDg-PI-Hcs" appends="YES" id="PbZ-V9-pDH"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="طلباتي" image="request-icon" id="Bxy-3n-BId"/>
                     <size key="freeformSize" width="375" height="1000"/>
@@ -328,6 +342,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qN8-vI-jr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="zDg-PI-Hcs"/>
             </objects>
             <point key="canvasLocation" x="692" y="329.2353823088456"/>
         </scene>

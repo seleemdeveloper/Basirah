@@ -55,6 +55,7 @@
 		E27F3D56208A9A9F00341472 /* UpdateRequestVC+DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D51208A9A9F00341472 /* UpdateRequestVC+DatePickerView.swift */; };
 		E27F3D57208A9A9F00341472 /* UpdateRequestVC+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D52208A9A9F00341472 /* UpdateRequestVC+Validator.swift */; };
 		E27F3D59208AA1B400341472 /* UpdateRequestVC+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D58208AA1B400341472 /* UpdateRequestVC+Request.swift */; };
+		E27F3D5B208AAFFA00341472 /* GDCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F3D5A208AAFFA00341472 /* GDCheckbox.swift */; };
 		E2894DF42088424E00069AD5 /* DashBoardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */; };
 		E2894DF72088437A00069AD5 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DF52088437A00069AD5 /* DashboardVC.swift */; };
 		E2894DFD20884B5900069AD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2894DFC20884B5900069AD5 /* ProfileVC.swift */; };
@@ -122,6 +123,7 @@
 		E27F3D51208A9A9F00341472 /* UpdateRequestVC+DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateRequestVC+DatePickerView.swift"; sourceTree = "<group>"; };
 		E27F3D52208A9A9F00341472 /* UpdateRequestVC+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateRequestVC+Validator.swift"; sourceTree = "<group>"; };
 		E27F3D58208AA1B400341472 /* UpdateRequestVC+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpdateRequestVC+Request.swift"; sourceTree = "<group>"; };
+		E27F3D5A208AAFFA00341472 /* GDCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCheckbox.swift; sourceTree = "<group>"; };
 		E2894DF32088424E00069AD5 /* DashBoardVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashBoardVC.storyboard; sourceTree = "<group>"; };
 		E2894DF52088437A00069AD5 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		E2894DFC20884B5900069AD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 		E2A1AF102088163400216E4E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E27F3D5A208AAFFA00341472 /* GDCheckbox.swift */,
 				E26B887020894EB400BC5EED /* Extensions */,
 				E2A1AF112088164400216E4E /* Defaults.swift */,
 			);
@@ -705,6 +708,7 @@
 				E2A1AF0F208813DD00216E4E /* RegisterVC+Firebase.swift in Sources */,
 				E26B8884208969D000BC5EED /* NewRequestVC+Keyboard.swift in Sources */,
 				E2A1AF0D208813B500216E4E /* RegisterVC+Router.swift in Sources */,
+				E27F3D5B208AAFFA00341472 /* GDCheckbox.swift in Sources */,
 				E2A1AF1E20881CC700216E4E /* RegisterVC+MSG.swift in Sources */,
 				E26B889420897E5B00BC5EED /* RequestsVC+TableView.swift in Sources */,
 				E2A1AF122088164400216E4E /* Defaults.swift in Sources */,

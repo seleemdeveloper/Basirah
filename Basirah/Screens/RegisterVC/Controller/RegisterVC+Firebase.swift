@@ -13,7 +13,7 @@ import RealmSwift
 extension RegisterVC
 {
     
-    func register(email: String,password: String,successHandler: @escaping ()->(),failureHandler: @escaping (_ msg: String)->())
+    func register(email: String,password: String,type:String,successHandler: @escaping ()->(),failureHandler: @escaping (_ msg: String)->())
     {
         
         Auth.auth().createUser(withEmail: email, password: password) {
@@ -35,7 +35,6 @@ extension RegisterVC
             
             let realmUser = User()
             realmUser.email = email
-            realmUser.userType = .requester
             realmUser.password = password
             
             do
@@ -53,7 +52,21 @@ extension RegisterVC
             catch
             {
                 failureHandler("تعذر تسجيل مستخدم جديد")
+                return
             }
+            
+            //=========================
+            
+            self.ref = Database.database().reference()
+            guard let userID = Auth.auth().currentUser?.uid else
+            {
+                failureHandler("تعذر تحديث البيانات الخاصة بك")
+                return
+                
+            }
+           
+            
+            self.ref.child("users").child(userID).setValue(["type": type])
             
         }
         

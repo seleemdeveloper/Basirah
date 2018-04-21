@@ -34,7 +34,6 @@ extension LoginVC
             
             let realmUser = User()
             realmUser.email = email
-            realmUser.userType = .requester
             realmUser.password = password
             
             do

@@ -24,8 +24,10 @@
                 <outlet property="msgIndicatorLabel" destination="xO2-ea-rH0" id="RnD-Bv-INo"/>
                 <outlet property="passwordTextField" destination="wc1-ol-IBJ" id="9Xj-6j-AvE"/>
                 <outlet property="repeatPasswordTextField" destination="4FR-Uk-3BE" id="Jyk-89-N0D"/>
+                <outlet property="requesterBox" destination="Jvs-X3-YVq" id="gjV-Th-7TL"/>
                 <outlet property="scrollView" destination="Xtz-a5-JQn" id="bXJ-vV-Dje"/>
                 <outlet property="view" destination="Stm-6M-ntA" id="znL-gM-pPc"/>
+                <outlet property="volunteerBox" destination="AtJ-J2-lMV" id="Ufh-Ap-pfK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -60,10 +62,10 @@
                                             </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQl-r8-MZI" userLabel="sign in form">
-                                            <rect key="frame" x="0.0" y="230.5" width="375" height="132"/>
+                                            <rect key="frame" x="0.0" y="230.5" width="375" height="200"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3vR-bK-KIA">
-                                                    <rect key="frame" x="30" y="0.0" width="315" height="132"/>
+                                                    <rect key="frame" x="30" y="0.0" width="315" height="131"/>
                                                     <subviews>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-Ec-w5O">
                                                             <rect key="frame" x="0.0" y="0.0" width="315" height="43"/>
@@ -80,15 +82,14 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tb8-6F-lDx" userLabel="seperator">
-                                                            <rect key="frame" x="0.0" y="43.5" width="315" height="1"/>
+                                                            <rect key="frame" x="0.0" y="43" width="315" height="1"/>
                                                             <color key="backgroundColor" red="0.8351485729" green="0.83512353900000003" blue="0.83513772490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="aQT-bF-o4B"/>
                                                                 <constraint firstAttribute="height" constant="1" id="l2W-Ch-5rD"/>
                                                             </constraints>
                                                         </imageView>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-ol-IBJ">
-                                                            <rect key="frame" x="0.0" y="44.5" width="315" height="43"/>
+                                                            <rect key="frame" x="0.0" y="44" width="315" height="43"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="43" id="yye-Og-Liq"/>
                                                             </constraints>
@@ -102,7 +103,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </textField>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Skj-Bv-dmA" userLabel="seperator">
-                                                            <rect key="frame" x="0.0" y="88" width="315" height="1"/>
+                                                            <rect key="frame" x="0.0" y="87" width="315" height="1"/>
                                                             <color key="backgroundColor" red="0.8351485729" green="0.83512353900000003" blue="0.83513772490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="4kt-ZG-3rw"/>
@@ -110,7 +111,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="تأكيد كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4FR-Uk-3BE">
-                                                            <rect key="frame" x="0.0" y="89" width="315" height="43"/>
+                                                            <rect key="frame" x="0.0" y="88" width="315" height="43"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="43" id="6ct-Yh-mQU"/>
                                                             </constraints>
@@ -125,18 +126,96 @@
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRC-Pd-oSY">
+                                                    <rect key="frame" x="0.0" y="140" width="375" height="60"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cWS-1j-9gk">
+                                                            <rect key="frame" x="37.5" y="14.5" width="300" height="30"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ie4-s5-MJq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مستمع" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-Mw-Jrl">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvs-X3-YVq" customClass="GDCheckbox" customModule="Basirah" customModuleProvider="target">
+                                                                            <rect key="frame" x="75" y="0.0" width="75" height="30"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRadiobox" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSquare" value="NO"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAnimate" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="containerColor">
+                                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                            <connections>
+                                                                                <action selector="requesterBoxDidTouched:" destination="-1" eventType="valueChanged" id="NAZ-ek-Ij5"/>
+                                                                            </connections>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XXC-0O-fvI">
+                                                                    <rect key="frame" x="150" y="0.0" width="150" height="30"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متطوع" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kar-8s-9Bl">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtJ-J2-lMV" customClass="GDCheckbox" customModule="Basirah" customModuleProvider="target">
+                                                                            <rect key="frame" x="75" y="0.0" width="75" height="30"/>
+                                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRadiobox" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSquare" value="NO"/>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAnimate" value="YES"/>
+                                                                                <userDefinedRuntimeAttribute type="color" keyPath="containerColor">
+                                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                            <connections>
+                                                                                <action selector="volunteerCheckBoxDidTouched:" destination="-1" eventType="valueChanged" id="CxI-UY-QmX"/>
+                                                                            </connections>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="300" id="4g2-XU-lwf"/>
+                                                                <constraint firstAttribute="height" constant="30" id="XGC-0U-b4j"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="cWS-1j-9gk" firstAttribute="centerX" secondItem="nRC-Pd-oSY" secondAttribute="centerX" id="bff-NR-i9c"/>
+                                                        <constraint firstAttribute="height" constant="60" id="pgM-fW-TtH"/>
+                                                        <constraint firstItem="cWS-1j-9gk" firstAttribute="centerY" secondItem="nRC-Pd-oSY" secondAttribute="centerY" id="tzp-2g-G7N"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
+                                                <constraint firstItem="nRC-Pd-oSY" firstAttribute="leading" secondItem="JQl-r8-MZI" secondAttribute="leading" id="Hs5-83-Yru"/>
+                                                <constraint firstAttribute="trailing" secondItem="nRC-Pd-oSY" secondAttribute="trailing" id="InY-31-cMf"/>
+                                                <constraint firstAttribute="bottom" secondItem="nRC-Pd-oSY" secondAttribute="bottom" id="SAK-Us-1HT"/>
                                                 <constraint firstItem="3vR-bK-KIA" firstAttribute="leading" secondItem="JQl-r8-MZI" secondAttribute="leading" constant="30" id="Ye0-5o-Adf"/>
-                                                <constraint firstAttribute="bottom" secondItem="3vR-bK-KIA" secondAttribute="bottom" id="dJo-OO-DYn"/>
-                                                <constraint firstAttribute="height" constant="132" id="u3a-df-AR0"/>
+                                                <constraint firstAttribute="height" constant="200" id="u3a-df-AR0"/>
                                                 <constraint firstItem="3vR-bK-KIA" firstAttribute="top" secondItem="JQl-r8-MZI" secondAttribute="top" id="uvr-Er-2ID"/>
                                                 <constraint firstAttribute="trailing" secondItem="3vR-bK-KIA" secondAttribute="trailing" constant="30" id="xhF-Te-l0B"/>
                                             </constraints>
                                         </view>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البيانات خاطئة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO2-ea-rH0">
-                                            <rect key="frame" x="32" y="378.5" width="311" height="20.5"/>
+                                            <rect key="frame" x="32" y="446.5" width="311" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>

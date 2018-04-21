@@ -32,22 +32,24 @@ class RequestsVC: UIViewController {
         }
     }
     
+    private let refreshControl = UIRefreshControl()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
+        
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshDidHappened(_:)), for: .valueChanged)
+
+
         self.tableView.delegate = self
         self.tableView.dataSource = self
 
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.getCurrentUserRequests({ (requests,responses) in
-            self.requestsWithoutResponses = requests
-            self.requestsWithResponses = responses
-        }) { (msg) in
-            self.showDefaultAlert(title: "خطأ في تحميل الطلبات", message: msg)
-        }
+       getRequests()
     }
     
     
@@ -62,6 +64,23 @@ class RequestsVC: UIViewController {
         route(to: .newRequest)
     }
     
+    @objc private func refreshDidHappened(_ sender: Any)
+    {
+        getRequests()
+    }
+    
+    
+    func getRequests()
+    {
+        self.getCurrentUserRequests({ (requests,responses) in
+            self.requestsWithoutResponses = requests
+            self.requestsWithResponses = responses
+            self.tableView.refreshControl?.endRefreshing()
+
+        }) { (msg) in
+            self.showDefaultAlert(title: "خطأ في تحميل الطلبات", message: msg)
+        }
+    }
    
 
     /*

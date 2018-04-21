@@ -9,23 +9,21 @@
 import Foundation
 import RealmSwift
 
+struct UserType
+{
+    static let volunteer = "volunteer"
+    static let requester = "requester"
+}
 
 class User: Object
 {
     @objc dynamic var name: String = ""
     @objc dynamic var email: String = ""
     @objc dynamic var password: String = ""
-    @objc dynamic var userType:UserType = .requester
 }
 
 
 
-@objc
-enum UserType:Int
-{
-    case requester 
-    case voulunteer
-}
 
 
 func isRegisteredEmail(email: String) -> Bool
