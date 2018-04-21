@@ -45,8 +45,7 @@ extension VolunteerRequests: UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-       
-        
+       route(to: .recorder(request: requests[indexPath.row]))
     }
     
     
