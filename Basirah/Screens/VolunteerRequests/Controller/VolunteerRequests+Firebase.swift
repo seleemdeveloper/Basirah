@@ -16,7 +16,7 @@ extension VolunteerRequests
     func getAllRequests(_ successHandler:@escaping (_ requests: [Request])->(),_ failHandler: @escaping (_ msg: String)->())
   {
         ref = Database.database().reference()
-        guard let userID = Auth.auth().currentUser?.uid else
+        guard let _ = Auth.auth().currentUser?.uid else
         {
             failHandler("حدث خطأ في تحميل الطلبات")
             return
