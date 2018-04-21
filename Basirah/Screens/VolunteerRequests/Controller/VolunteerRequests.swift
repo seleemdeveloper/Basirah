@@ -37,6 +37,8 @@ class VolunteerRequests: UIViewController {
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshDidHappened(_:)), for: .valueChanged)
         
+        let nibFile = UINib(nibName: CellIdentifier.RequestCell, bundle: nil)
+        tableView.register(nibFile, forCellReuseIdentifier: CellIdentifier.RequestCell)
         
         self.tableView.delegate = self
         self.tableView.dataSource = self

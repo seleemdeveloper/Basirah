@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import ObjectMapper
 
 extension VolunteerRequests
 {
@@ -23,34 +24,42 @@ extension VolunteerRequests
         }
     
     
-    self.ref.child(RequestKeys.mainKey).child(userID).observeSingleEvent(of: .value)
+    self.ref.child(RequestKeys.mainKey).observeSingleEvent(of: .value)
     {
         
         (snapshot, str) in
-        guard let requestsDict = snapshot.value as? [String:[String:AnyObject]] else
+        guard let requestDictArray = snapshot.value as? [String:[String:[String:AnyObject]]] else
         {
             failHandler("لا توجد طلبات حتي الآن")
             return
         }
         
         var requests:[Request] = []
-        for (requestTimestamp,requestDict) in requestsDict
-        {
-            let date = Date(timeIntervalSince1970: Double(requestTimestamp) ?? 0.0)
-            guard let request = Request(JSON: requestDict) else
+       
+            for (userID,userRequestsArray) in requestDictArray
             {
-                failHandler("حدث خطأ في تحميل الطلبات")
-                return
+                
+                for (requestTimestamp,requestDict) in userRequestsArray
+                {
+                    let date = Date(timeIntervalSince1970: Double(requestTimestamp) ?? 0.0)
+                    
+                    guard let request = Request(JSON: requestDict) else
+                    {
+                        failHandler("حدث خطأ في تحميل الطلبات")
+                        return
+                    }
+                    request.bookDate = date.description
+                    request.requestOwner = userID
+                    request.requestTimestamp = requestTimestamp
+                    if request.response == nil
+                    {
+                     requests.append(request)
+                    }
+                    
+                }
             }
-            request.bookDate = date.description
-            request.requestOwner = userID
-            request.requestTimestamp = requestTimestamp
-            if request.response == nil
-            {
-             requests.append(request)
-            }
-            
-        }
+ 
+        
         successHandler(requests)
     }
     

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestCell" customModule="Basirah" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="249" id="Euh-vz-Qzn" customClass="RequestCell" customModule="Basirah" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Euh-vz-Qzn" id="9bz-iV-jyG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="248.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-GX-c4Z" userLabel="seperator">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="sae-H1-rEY"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VQe-Ms-cHE">
+                        <rect key="frame" x="239" y="20" width="120" height="228.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الكتاب" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-y7-LmZ">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المؤلف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6E-OQ-s14">
+                                <rect key="frame" x="0.0" y="45.5" width="120" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التصنيف" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpb-Tq-8zq">
+                                <rect key="frame" x="0.0" y="91.5" width="120" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلب بتاريخ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKZ-qk-b2p">
+                                <rect key="frame" x="0.0" y="137" width="120" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التاريخ النهائي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-NQ-g53">
+                                <rect key="frame" x="0.0" y="183" width="120" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="XWU-q4-8Tl"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y1r-zc-Ihp">
+                        <rect key="frame" x="8" y="20" width="231" height="228.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الرجال من المريخ والنساء من الزهرة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-Rh-0Kp">
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أحمد فتحي عبد العزيز سليم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3r-CJ-YzA">
+                                <rect key="frame" x="0.0" y="45.5" width="231" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="روايات عالمية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyM-I2-U8h">
+                                <rect key="frame" x="0.0" y="91.5" width="231" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الثلاثاء ٢١ جمادي الثاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsp-OA-RaK">
+                                <rect key="frame" x="0.0" y="137" width="231" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاربعاء ٢٢ جمادي الثاني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBk-8R-sq3">
+                                <rect key="frame" x="0.0" y="183" width="231" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Ppq-GX-c4Z" firstAttribute="top" secondItem="9bz-iV-jyG" secondAttribute="top" id="893-wV-dOx"/>
+                    <constraint firstItem="Ppq-GX-c4Z" firstAttribute="leading" secondItem="9bz-iV-jyG" secondAttribute="leading" id="KIx-fP-fLS"/>
+                    <constraint firstAttribute="bottom" secondItem="VQe-Ms-cHE" secondAttribute="bottom" id="OXo-fF-ZXz"/>
+                    <constraint firstItem="VQe-Ms-cHE" firstAttribute="leading" secondItem="Y1r-zc-Ihp" secondAttribute="trailing" id="VqB-XV-g5y"/>
+                    <constraint firstAttribute="bottom" secondItem="Y1r-zc-Ihp" secondAttribute="bottom" id="aAk-tK-hAi"/>
+                    <constraint firstAttribute="trailing" secondItem="Ppq-GX-c4Z" secondAttribute="trailing" id="c78-DH-Z6g"/>
+                    <constraint firstItem="Y1r-zc-Ihp" firstAttribute="top" secondItem="Ppq-GX-c4Z" secondAttribute="bottom" id="eZK-Cg-adg"/>
+                    <constraint firstAttribute="trailing" secondItem="VQe-Ms-cHE" secondAttribute="trailing" constant="16" id="ffN-Xo-eBM"/>
+                    <constraint firstItem="VQe-Ms-cHE" firstAttribute="top" secondItem="Ppq-GX-c4Z" secondAttribute="bottom" id="nQi-Cr-lZ4"/>
+                    <constraint firstItem="Y1r-zc-Ihp" firstAttribute="leading" secondItem="9bz-iV-jyG" secondAttribute="leading" constant="8" id="oMu-73-id3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="k3r-CJ-YzA" id="5Bs-H4-7vJ"/>
+                <outlet property="bookNameLabel" destination="Tue-Rh-0Kp" id="Uze-5k-viV"/>
+                <outlet property="categoryLabel" destination="GyM-I2-U8h" id="HDU-M4-cc4"/>
+                <outlet property="endDateLabel" destination="uBk-8R-sq3" id="MmH-1d-Uhn"/>
+                <outlet property="startDateLabel" destination="wsp-OA-RaK" id="MUv-UI-bJy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
